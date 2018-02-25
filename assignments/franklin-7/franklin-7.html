@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Franklin City</title>
+  <meta name="author" content="Sterling Welker">
+  <meta name="description" content="page description placeholder">
+  <!-- external style references in the proper cascading order -->    
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">  <!-- Google API font reference -->
+  <link href="/styles/normalize.css" rel="stylesheet"> <!-- normalize useragent/browser defaults -->
+  <link href="styles/main-7.css" rel="stylesheet">    <!-- default styles - small/phone views -->
+  <link href="styles/medium-7.css" rel="stylesheet">  <!-- medium/tablet views -->
+  <link href="styles/large-7.css" rel="stylesheet">   <!-- large/wide/desktop views --> 
+</head>
+<body>
+
+  <header>
+    <img class="img-logo" src="images/200px-Weather.png" alt="The site logo">
+    <h1>It's Raining Cats &amp; Dogs! </h1>
+    <div class="subheading">We know the weather</div>
+  </header>
+
+  <!-- site navigation use placeholder references -->
+  <nav>
+    <button onclick="toggleMenu()">&#9776;</button>
+    <ul id="primaryNav" class="hide">
+    	<li><a href="#">Home</a></li>
+    	<li class="active"><a href="#">Franklin</a></li>
+    	<li><a href="#">Greenville</a></li>
+    	<li><a href="#">Springfield</a></li>
+    	<li><a href="#">Storm Center</a></li>
+    	<li><a href="gallery-7.html">Gallery</a></li>
+    </ul>		
+  </nav>
+    
+  <main>
+    <h2>The City of Franklin</h2>
+    <figure class="hero">
+      <img src="images/franklin-original-cropped.jpeg" alt="City of Franklin" sizes="100vw"
+           srcset="images/franklin-original-cropped-300.jpeg 300w,
+                   images/franklin-original-cropped-600.jpeg 600w,
+                   images/franklin-original-cropped-900.jpeg 900w">
+    </figure>
+    <section class="flex-container">
+      <h3>Weather Summary</h3>    
+      <div class="wea"><div class="current">
+          <div><p>Sunny</p></div>
+        <div><picture>
+            <img class="sunny" src="images/sun-opt.jpg" alt="Sunny Sky">
+            </picture></div>
+      </div>
+        <div class="highlow">
+            <div><p>High: <b><span id="high">78</span>&deg;F</b></p></div> 
+            <div><p>Low: <b><span id="low">54</span>&deg;F</b></p> </div> 
+      </div>
+      <div class="conditions">
+          <div><p>Precipitation: <b>0 in</b></p></div>
+          <div><p>Wind Speed: <b><span id="wind">7 </span>mph NE</b></p></div> 
+          <div><p>Feels Like: <b><span id="feelsLike"></span>&deg;F</b></p></div>
+          </div> </div>          
+    </section>
+        
+    <section class="forecast">
+      <h3>10 Day Forecast</h3>
+      <table>
+	    <thead>
+          <tr>
+            <th>Temp</th>
+            <th>Day 1</th>
+            <th>Day 2</th>
+            <th>Day 3</th>
+            <th>Day 4</th>
+            <th>Day 5</th>
+            <th>Day 6</th>
+            <th>Day 7</th>
+            <th>Day 8</th>
+            <th>Day 9</th>
+            <th>Day 10</th>
+          </tr>
+		</thead>
+        <tbody>  
+          <tr>
+              <td>High</td>
+            <td>89&deg;F</td>
+            <td>87&deg;F</td>
+            <td>78&deg;F</td>
+            <td>75&deg;F</td>
+            <td>72&deg;F</td>
+            <td>72&deg;F</td>
+            <td>79&deg;F</td>
+            <td>83&deg;F</td>
+            <td>85&deg;F</td>
+            <td>89&deg;F</td>
+          </tr>
+          <tr>
+              <td>Low</td>
+            <td>62&deg;F</td>
+            <td>58&deg;F</td>
+            <td>53&deg;F</td>
+            <td>51&deg;F</td>
+            <td>54&deg;F</td>
+            <td>50&deg;F</td>
+            <td>55&deg;F</td>
+            <td>57&deg;F</td>
+            <td>56&deg;F</td>
+            <td>60&deg;F</td>
+          </tr>
+		</tbody>
+      </table>
+    </section>
+      
+    <br>
+      
+    <article>
+      <div class="container"><h3>Franklin Breaks Record</h3>	
+      <p class="town-article">
+        <img class="img1" src="images/lightning-storm-weather-sky-opt.jpeg" alt="Storm">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vestibulum mattis ullamcorper velit sed ullamcorper morbi tincidunt ornare. Vitae auctor eu augue ut lectus arcu bibendum. Sit amet consectetur adipiscing elit ut aliquam purus. Urna et pharetra pharetra massa massa ultricies mi quis. Urna condimentum mattis pellentesque id nibh tortor id aliquet. Morbi tempus iaculis urna id volutpat lacus laoreet non. Etiam sit amet nisl purus. Enim nec dui nunc mattis. Velit egestas dui id ornare. Ornare massa eget egestas purus viverra accumsan. Fames ac turpis egestas maecenas pharetra. Augue mauris augue neque gravida in. Netus et malesuada fames ac. Massa tincidunt dui ut ornare lectus sit. Viverra accumsan in nisl nisi scelerisque eu ultrices. Hendrerit dolor magna eget est lorem ipsum. Neque gravida in fermentum et sollicitudin. Massa massa ultricies mi quis. Dignissim enim sit amet venenatis urna cursus eget.
+
+Mauris rhoncus aenean vel elit scelerisque. Donec ultrices tincidunt arcu non sodales neque sodales ut. Enim sed faucibus turpis in eu mi bibendum neque. Orci porta non pulvinar neque laoreet suspendisse interdum consectetur libero. Eget mi proin sed libero enim sed faucibus. Tellus pellentesque eu tincidunt tortor. Condimentum vitae sapien pellentesque habitant morbi tristique senectus. Cum sociis natoque penatibus et magnis dis parturient. Scelerisque felis imperdiet proin fermentum leo vel orci. Laoreet suspendisse interdum consectetur libero id faucibus nisl tincidunt eget. Quam elementum pulvinar etiam non quam. Consequat id porta nibh venenatis.
+        </div>
+      </article>
+  
+  </main>
+    <br>
+  <footer>
+    <aside>
+      Contact information placeholder
+    </aside>
+    <p class="footer-bar">&copy;2018 All Rights Reserved | Site Title | <span id="currentdate"></span> </p>
+  </footer>
+
+  <script src="scripts/hamburger.js"></script>
+  <script src="scripts/currentdate.js"></script>
+<script src="scripts/windchill.js"></script>
+
+</body>
+</html>
