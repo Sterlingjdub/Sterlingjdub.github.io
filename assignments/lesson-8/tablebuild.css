@@ -23,8 +23,8 @@ table{
 table td, th{
     font-family:Ubuntu, sans-serif;
     text-align:center;
-    padding:5px;
-    border: 1px solid #628ca6;
+    padding:8px;
+    border: 1px solid silver;
 }
 
 caption{
