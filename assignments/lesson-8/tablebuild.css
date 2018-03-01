@@ -12,7 +12,7 @@ main{
 }
 
 div {
-    border: 1px solid #628ca6;
+    border: 1px solid silver;
     box-shadow: 10px 10px 10px #628ca6;
 }
 
@@ -49,6 +49,7 @@ tr:nth-child(odd) {
 }
 
 .nov{
+    color: white;
     background-color:#628ca6;
 }
 			
