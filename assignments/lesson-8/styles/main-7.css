@@ -1,0 +1,133 @@
+/* This main css file contains the default rules and is geared toward the small/phone view */
+
+* { box-sizing: border-box;} 
+
+
+body {
+  font-size: 16px;
+    background-color: #f5f5dc;
+    font-family: sans-serif;}
+
+header { background-color: skyblue;
+        padding: 1px;
+        width: auto;
+        border: 1px solid #111;}
+header h1 {font-family: 'Ubuntu', serif;
+    font-size: 24px;
+    padding: 0 2%;
+    text-shadow: 2px 2px 2px #fff;
+    text-align: center}
+header img {float: left;
+        height: 5rem;
+        width: 5rem;}
+header .subheading {text-decoration: underline;
+    font-size: 14px;
+    padding: 2%;
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 4px #000000;;
+    font-weight: bold}
+
+ /*----------- NAV -----------*/
+
+nav {
+background: #00fffa; 
+background: -moz-linear-gradient(top, #00fffa 0%, #00becf 100%);
+background: -webkit-linear-gradient(top, #00fffa 0%,#00becf 100%); 
+background: linear-gradient(to bottom, #00fffa 0%,#00becf 100%); 
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00fffa', endColorstr='#00becf',GradientType=0 ); }
+
+nav {
+    overflow: hidden;
+    background-color: #00becf;
+    border: 1px solid #000; }
+
+nav button {
+    margin: .2rem 2%;
+    background-color: transparent;
+    border: none;
+    font-size: 1.6rem;
+    color: #000;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li a {display: flex;
+    flex-direction: column;
+    padding: .8rem 2%;
+    text-decoration: none;
+    color: #000;
+    border-top: 1px solid rgba(0,0,0,0.3);
+}
+
+nav ul.hide{display: none;}
+
+nav li a:hover {background-color: skyblue;}
+    
+nav .active {background-color: #f5dc5f;}
+
+
+ /*----------- MAIN ----------*/
+
+main {padding: 0;
+min-height: 10rem;}
+main h2 { color: gray;
+    text-shadow: 1px 1px 2px black, 0 0 25px blue;
+    text-align: center}
+main figure { margin: 0 0 .2rem 2%; width:96%;}
+main figure img { width: 100%;
+    margin: 0;
+    box-shadow: 5px 5px 2px grey;
+    border: 1px solid #111;}
+
+section h3 {font-size: 20px;
+        text-align: center;
+        border: 1px solid #111;
+        margin: 1rem;
+        background-color: #f5dc5f; }
+
+.wea {
+        display: flex;
+        flex-direction: column;
+        text-align: center
+    }
+
+section img { height: 5rem;
+width: 5rem;}
+
+
+
+section.forecast {display: none;}
+
+article {border: 1px solid #111;
+        margin: 0.5rem;
+        padding: 1rem;}
+
+article h3{ text-align: center;}
+
+.town-article{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.img1 { display: flex; 
+    width: 75%; 
+    margin: auto;}
+
+
+/*--------- FOOTER ---------*/
+
+footer {position: relative;
+        bottom: 0px;
+        background-color: #00becf;
+        text-align: center;
+        border: 1px solid #111;}
+footer aside {}
+footer>p {background-color: skyblue;
+        align-content: center;
+        border: 1px solid #111;}
