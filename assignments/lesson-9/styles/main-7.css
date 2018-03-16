@@ -6,7 +6,7 @@
 body {
   font-size: 16px;
     background-color: #f5f5dc;
-    font-family: sans-serif;}
+    font-family: 'Ubuntu', sans-serif}
 
 header { background-color: skyblue;
         padding: 1px;
@@ -132,6 +132,8 @@ article h3{
 /*--------- FOOTER ---------*/
 
 footer {position: relative;
+    padding: 2px;
+    line-height: 120%;
         bottom: 0px;
         background-color: #00becf;
         text-align: center;
@@ -169,7 +171,7 @@ main article img {
     background-color: gray;
     border: 1px solid #000;
     color: darkblue;
-   text-shadow: 2px 2px 2px #fff;
+   text-shadow: 1px 1px 1px #fff;
 }
 
 
