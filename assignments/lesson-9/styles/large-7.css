@@ -75,6 +75,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00fffa', end
 
     
     footer {position: relative;
+        padding: 3px;
+        line-height: 120%;
         bottom: 0px;
         background-color: #00becf;
         text-align: center;

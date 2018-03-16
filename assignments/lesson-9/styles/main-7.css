@@ -76,7 +76,7 @@ nav .active {background-color: #f5dc5f;}
 main {padding: 0;
 min-height: 10rem;}
 main h2 { color: gray;
-    text-shadow: 1px 1px 2px black, 0 0 25px blue;
+    text-shadow: 1px 1px 1px black;
     text-align: center}
 main figure { margin: 0 0 .2rem 2%; width:96%;}
 main figure img { width: 100%;
@@ -114,7 +114,7 @@ article h3{
     background-color: gray;
     border: 1px solid #000;
     color: darkblue;
-   text-shadow: 2px 2px 2px #fff;}
+   text-shadow: 1px 1px 1px #fff;}
 
 .town-article{
     display: flex;
