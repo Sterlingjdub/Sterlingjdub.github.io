@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Franklin City</title>
+  <meta name="author" content="Sterling Welker">
+  <meta name="description" content="Franklin Weather Forecast">
+  <!-- external style references in the proper cascading order -->    
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">  <!-- Google API font reference -->
+  <link href="/styles/normalize.css" rel="stylesheet"> <!-- normalize useragent/browser defaults -->
+  <link href="styles/main-7.css" rel="stylesheet">    <!-- default styles - small/phone views -->
+  <link href="styles/medium-7.css" rel="stylesheet">  <!-- medium/tablet views -->
+  <link href="styles/large-7.css" rel="stylesheet">   <!-- large/wide/desktop views --> 
+</head>
+<body>
+
+  <header>
+      <a href="index.html"><img class="img-logo" src="images/200px-Weather.png" alt="The site logo"></a>
+    <h1>It's Raining Cats &amp; Dogs! </h1>
+    <div class="subheading">We know the weather</div>
+  </header>
+
+  <!-- site navigation use placeholder references -->
+  <nav>
+    <button onclick="toggleMenu()">&#9776;</button>
+    <ul id="primaryNav" class="hide">
+    	<li><a href="index.html">Home</a></li>
+    	<li class="active"><a href="franklin-7.html">Franklin</a></li>
+    	<li><a href="greenville.html">Greenville</a></li>
+    	<li><a href="springfield.html">Springfield</a></li>
+    	<li><a href="stormcenter.html">Storm Center</a></li>
+    	<li><a href="gallery-7.html">Gallery</a></li>
+    </ul>		
+  </nav>
+     
+  <main>
+    <h2>Franklin, Minnesota</h2>
+    <figure class="hero">
+      <img src="images/franklin-original-cropped.jpeg" alt="City of Franklin" sizes="100vw"
+           srcset="images/franklin-original-cropped-300.jpeg 300w,
+                   images/franklin-original-cropped-600.jpeg 600w,
+                   images/franklin-original-cropped-900.jpeg 900w">
+    </figure>
+    <section class="flex-container">
+      <h3>Weather Summary</h3>    
+      <div class="wea"><div class="current">
+          <div><p><b><span id="current">Weather</span></b></p></div>
+        <div><picture>
+            <img id="weatherIcon" src="images/sun-opt.jpg" alt="Sunny Sky">
+            </picture></div>
+      </div>
+        <div class="forecastInfo">
+            <div><p>High: <b><span id="high">78</span>&deg;F</b></p>
+                <p>Low: <b><span id="low">54</span>&deg;F</b></p>
+                <p>Current Temperature: <b><span id="c-temp">temp</span>&deg;F</b></p>
+                <p>Forecaste: <b><span id="c-forecast"></span></b></p></div> 
+      </div>
+      <div class="conditions">
+          <p>Precipitation: <b>0&#37;</b></p>
+          <p>Wind Speed: <b><span id="wind"></span>mph</b></p>
+          <p>Feels Like: <b><span id="feelsLike"></span>&deg;F</b></p>
+          
+          </div> </div>            
+    </section>
+        
+    <section class="forecast">
+      <h3>10 Day Forecast</h3>
+      <table>
+	    <thead>
+          <tr>
+            <th>Temp</th>
+            <th>Day 1</th>
+            <th>Day 2</th>
+            <th>Day 3</th>
+            <th>Day 4</th>
+            <th>Day 5</th>
+            <th>Day 6</th>
+            <th>Day 7</th>
+            <th>Day 8</th>
+            <th>Day 9</th>
+            <th>Day 10</th>
+          </tr>
+		</thead>
+        <tbody>  
+          <tr>
+              <td>High</td>
+            <td>89&deg;F</td>
+            <td>87&deg;F</td>
+            <td>78&deg;F</td>
+            <td>75&deg;F</td>
+            <td>72&deg;F</td>
+            <td>72&deg;F</td>
+            <td>79&deg;F</td>
+            <td>83&deg;F</td>
+            <td>85&deg;F</td>
+            <td>89&deg;F</td>
+          </tr>
+          <tr>
+              <td>Low</td>
+            <td>62&deg;F</td>
+            <td>58&deg;F</td>
+            <td>53&deg;F</td>
+            <td>51&deg;F</td>
+            <td>54&deg;F</td>
+            <td>50&deg;F</td>
+            <td>55&deg;F</td>
+            <td>57&deg;F</td>
+            <td>56&deg;F</td>
+            <td>60&deg;F</td>
+          </tr>
+		</tbody>
+      </table>
+    </section>
+      
+    <br>
+      
+    <article>
+      <h3>The City of Franklin</h3>	
+      <p class="town-article">
+        <img class="img1" src="images/franklin.jpeg" alt="Storm">
+         Welcome to the City of Franklin, Minnesota's Catfish Capital! The City of Franklin was founded October 26, 1882 and was named after Benjamin Franklin.  Franklin is located on State Highway 19 overlooking the beautiful Minnesota River Valley. <br>
+          <br>
+          Franklin is a unique blend of history and progress. You'll find the best of both worlds here: small-town charm and big-city sophistication. There are fascinating Civil War sites and museums, magnificent Antebellum and Victorian homes - plus our thriving downtown shopping area and the Cool Springs Galleria, unique dining and entertainment, and wonderful festivals. Franklin has grown from a very small, agricultural community into a strong blend of residential, commercial and corporate citizens. 
+      </article>
+  
+  </main>
+    <br>
+  <footer>
+    <aside>
+        123 Main St.<br>
+        Franklin, MN 55333<br>
+        (123) 555 1234 <br>
+        contact@gmail.com
+    </aside>
+    <p class="footer-bar">&copy;2018 All Rights Reserved | It's Raining Cats &amp; Dogs | <span id="currentdate"></span> </p>
+  </footer>
+
+  <script src="scripts/hamburger.js"></script>
+  <script src="scripts/currentdate.js"></script>
+<script src="scripts/wu-weatherFranklin.js"></script>
+
+</body>
+</html>

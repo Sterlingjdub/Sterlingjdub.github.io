@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Home Page</title>
+  <meta name="author" content="Sterling Welker">
+  <meta name="description" content="Home Page">
+  <!-- external style references in the proper cascading order -->    
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">  <!-- Google API font reference -->
+  <link href="/styles/normalize.css" rel="stylesheet"> <!-- normalize useragent/browser defaults -->
+  <link href="styles/main-7.css" rel="stylesheet">    <!-- default styles - small/phone views -->
+  <link href="styles/medium-7.css" rel="stylesheet">  <!-- medium/tablet views -->
+  <link href="styles/large-7.css" rel="stylesheet">   <!-- large/wide/desktop views --> 
+<link href="styles/index.css" rel="stylesheet">
+</head>
+    <body>
+
+        <header>
+            <a href="index.html"><img class="img-logo" src="images/200px-Weather.png" alt="The site logo"></a>
+    <h1>It's Raining Cats &amp; Dogs! </h1>
+    <div class="subheading">We know the weather</div>
+  </header>
+
+        <!-- site navigation use placeholder references -->
+        <nav>
+    <button onclick="toggleMenu()">&#9776;</button>
+    <ul id="primaryNav" class="hide">
+    	<li class="active"><a href="index.html">Home</a></li>
+    	<li><a href="franklin-7.html" >Franklin</a></li>
+    	<li><a href="greenville.html">Greenville</a></li>
+    	<li><a href="springfield.html">Springfield</a></li>
+    	<li><a href="stormcenter.html">Storm Center</a></li>
+    	<li><a href="gallery-7.html">Gallery</a></li>
+    </ul>		
+  </nav>
+        <main>   
+<article class="wOverview">
+                <div id="weather">
+                    <h2>Weather Story</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vel fermentum elit. Fusce consequat condimentum odio quis condimentum. Praesent ac felis turpis. Cras molestie iaculis velit, sit amet consequat ante porta dignissim. Nam pharetra nisi vitae malesuada iaculis. Nulla facilisi.  Ad eum porro delenit, cu eam quodsi intellegebat, ad ludus eloquentiam sed. Ne eum velit affert, sumo adipiscing in pri. Te his reprimique signiferumque, qui congue oportere sapientem ei. Vel sale nihil munere ea, in mel quando recteque consequat. Urbanitas elaboraret mediocritatem eu vix, per nulla consul an.
+                    </p>
+                </div>
+                    <picture>
+                        <img class="weather-pic" src="images/weather.jpeg" alt="Picture of Weather">
+                    </picture>
+            </article>
+
+            <section>
+                <article class="fOverview">
+                    <div id="franklin">
+                        <a href="franklin-7.html"><h2>Franklin City</h2></a>
+                        <p><span id="fMotto"></span></p>
+                        <p><span id="fFounded"></span></p>
+                        <p><span id="fPopulation"></span></p>
+                        <p><span id="fRainfall"></span></p>
+                    </div>
+                    <picture>
+                        <img class="weather-pic"  src="images/town1.jpeg" alt="Franklin City">
+                    </picture>
+                </article>
+
+                <article class="gOverview">
+                    <div id="greenville">
+                        <a href="#"><h2>Greenville City</h2></a>
+                        <p><span id="gMotto"></span></p>
+                        <p><span id="gFounded"></span></p>
+                        <p><span id="gPopulation"></span></p>
+                        <p><span id="gRainfall"></span></p>
+                    </div>
+                    <picture>
+                        <img class="weather-pic"  src="images/town2.jpg" alt="Greenville">
+                    </picture>
+                </article>
+
+                <article class="sOverview">
+                    <div id="springfield">
+                        <a href="#"><h2>Springfield City</h2></a>
+                        <p><span id="sMotto"></span></p>
+                        <p><span id="sFounded"></span></p>
+                        <p><span id="sPopulation"></span></p>
+                        <p><span id="sRainfall"></span></p>
+                    </div>
+                    <picture>
+                        <img class="weather-pic"  src="images/town3.jpg" alt="Springfield">
+                    </picture>
+                </article>
+            </section>
+        </main>   
+ <br>
+  <footer>
+    <aside>
+        123 Main St.<br>
+        Franklin, MN 55333<br>
+        (123) 555 1234 <br>
+        contact@gmail.com
+    </aside>
+    <p class="footer-bar">&copy;2018 All Rights Reserved | It's Raining Cats &amp; Dogs | <span id="currentdate"></span> </p>
+  </footer>
+
+        <script src="scripts/hamburger.js"></script>
+        <script src="scripts/currentdate.js"></script>
+        <script src="scripts/towndata.js">
+        </script>
+    </body>
+</html>

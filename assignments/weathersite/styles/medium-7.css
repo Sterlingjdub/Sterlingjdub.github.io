@@ -1,0 +1,142 @@
+@media only screen and (min-width: 37.5em) {
+  
+    /*------HEADER-------*/
+    
+    header {height: 8rem}
+    
+    header img{ display: flex;
+        width: auto;
+    height: 7rem;}
+    
+    header h1 { font-size: 39px;}
+    
+    header .subheading {font-size: 16px;
+        padding: 0;
+        margin: 0;
+    }
+    
+    /*------NAV------*/
+    
+    
+nav button {display: none;}
+    
+    nav ul.hide {display: flex;}
+    
+    nav  ul {margin-left: 0;}
+    
+    nav ul li {flex: auto}
+    
+    nav ul li a {
+        border: 1px solid #000;
+        padding: .8rem 1rem;
+    }
+    
+    li a:hover {background-color: #111;}
+    
+    .active {background-color: #6EFF9E;}
+    /*-----SECTION-----*/
+    
+    section h3 { font-size: 30px;}
+    
+    
+    table, td, th{border: 1px solid #111;
+                  text-align: center;}
+    
+    table{border-collapse: collapse;
+        width: 50%;}
+    
+    table{margin: auto;}
+    
+    th {height: 50px;
+        background-color: #d1d1d1;}
+    
+    td {background-color: #f1f1f1;
+        padding: 4px;}
+    
+  nav button { display:none; }  
+  
+  section.forecast { display: block;}  
+  
+    /*----ARTICLE-----*/
+    
+    .town-article{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: center;
+        line-height: 1.2;
+    }
+
+   article p.town-article img {
+      order: 2;
+      width: 50%;
+    border-radius: 10px;
+  }
+
+     footer {
+        padding: 3px;
+        line-height: 120%;
+        position: relative;
+        bottom: 0px;
+        background-color: #00becf;
+        text-align: center;
+        border: 1px solid #111;}
+    
+    p.footer-bar{
+        background-color: skyblue;
+        align-content: center;
+        border: 1px solid #111;}
+    
+}
+
+/*-----------index html--------*/
+main article{
+    margin: 2% 1% 2% 1%;
+}
+
+.wOverview, .gOverview{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    border: none;
+}
+
+#weather, #greenville {
+    border: 1px solid #000;
+    box-shadow: 10px 10px 20px gray;
+    padding: 0 .5em;
+    margin: 2% 2% 0 0;
+}
+
+#weather {
+    width: 80%;
+}  
+
+.fOverview, .sOverview{
+    display: flex;
+    flex-flow: row-reverse nowrap;
+    justify-content: space-between;
+    align-items: center;
+    border: none;
+}
+
+#franklin, #springfield {
+    border: 1px solid #000;
+    box-shadow: 10px 10px 20px gray;
+    padding: 0 .5em;
+    margin-left: 2%;
+    margin-top: 2%;
+    margin: 0 0 2% 2%;
+}
+
+.weather-pic{
+display: grid;
+grid-template-columns: 1fr 1fr;
+grid-column-gap: 15px;
+grid-template-rows: 1fr 1fr 1fr;
+width: 100%;
+margin-left: 0%;
+margin-right: 0%;
+}
+

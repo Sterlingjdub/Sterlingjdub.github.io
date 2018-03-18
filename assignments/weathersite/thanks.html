@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Storm Center</title>
+  <meta name="author" content="Sterling Welker">
+  <meta name="description" content="Thank you pager">
+  <!-- external style references in the proper cascading order -->    
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">  <!-- Google API font reference -->
+  <link href="/styles/normalize.css" rel="stylesheet"> <!-- normalize useragent/browser defaults -->
+  <link href="styles/main-7.css" rel="stylesheet">    <!-- default styles - small/phone views -->
+  <link href="styles/medium-7.css" rel="stylesheet">  <!-- medium/tablet views -->
+  <link href="styles/large-7.css" rel="stylesheet">   <!-- large/wide/desktop views --> 
+<link href="styles/storm.css" rel="stylesheet">
+</head>
+    <body>
+
+  <header>
+      <a href="index.html"><img class="img-logo" src="images/200px-Weather.png" alt="The site logo"></a>
+    <h1>It's Raining Cats &amp; Dogs! </h1>
+    <div class="subheading">We know the weather</div>
+  </header>
+
+  <!-- site navigation use placeholder references -->
+  <nav>
+    <button onclick="toggleMenu()">&#9776;</button>
+    <ul id="primaryNav" class="hide">
+    	<li><a href="#">Home</a></li>
+    	<li><a href="franklin-7.html">Franklin</a></li>
+    	<li><a href="greenville.html">Greenville</a></li>
+    	<li><a href="springfield.html">Springfield</a></li>
+    	<li class="active"><a href="stormcenter.html">Storm Center</a></li>
+    	<li><a href="gallery-7.html">Gallery</a></li>
+    </ul>		
+  </nav>
+        
+        <main class="thanks">
+            <h3>Thank you for filling out this form!</h3>
+            <p>We appreciate your help as we strive to keep our visitors up to date.</p>
+        </main>
+        
+        <br>
+  <footer>
+    <aside>
+        123 Main St.<br>
+        Franklin, MN 55333<br>
+        (123) 555 1234 <br>
+        contact@gmail.com
+    </aside>
+    <p class="footer-bar">&copy;2018 All Rights Reserved | It's Raining Cats &amp; Dogs | <span id="currentdate"></span> </p>
+  </footer>
+
+  <script src="scripts/hamburger.js"></script>
+  <script src="scripts/currentdate.js"></script>
+
+</body>
+</html>
