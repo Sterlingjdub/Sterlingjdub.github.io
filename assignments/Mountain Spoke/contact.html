@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>The Moutain Spoke</title>
+        <meta name="author" content="Sterling Welker">
+        <meta name="description" content="Sales page for The Mountain Spoke.">
+        <!-- external style references in the proper cascading order -->    
+        <link href="https://fonts.googleapis.com/css?family=Permanent+Marker|Trirong" rel="stylesheet">  <!-- Google API font reference -->
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">  <!-- Google API font reference -->
+        <link href="https://fonts.googleapis.com/css?family=Georgia" rel="stylesheet">  <!-- Google API font reference -->
+        <link href="styles/normalize.css" rel="stylesheet"> <!-- normalize useragent/browser defaults -->
+        <link href="styles/main.css" rel="stylesheet">    <!-- default styles - small/phone views -->
+        <link href="styles/medium.css" rel="stylesheet">  <!-- medium/tablet views -->
+        <link href="styles/large.css" rel="stylesheet">   <!-- large/wide/desktop views --> 
+        
+    </head>
+    <body>
+
+        <header class="container">
+            <a href="home.html"><img src="images/bike-logo.jpg" alt="The site logo"></a>
+            <div>
+              <h1>The Mountain Spoke</h1>
+                <div class = "subheading">Grasp life by the handlebars!</div>
+            </div>
+        </header>
+
+        <!-- site navigation use placeholder references -->
+        <nav class="mainMenu">
+            <button onclick="toggleNavMenu()">&#9776;</button>
+            <ul id="primaryNav" class="hide">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="tours.html">Tours</a></li>
+                <li><a href="event.html">Event</a></li>
+                <li><a href="#">Sales</a>
+                    <ul>
+                        <li><a href="sales1.html" class="submenu">MTN Bike</a></li>
+                        <li><a href="sales2.html" class="submenu">Road Bike</a></li>
+                        <li><a href="sales3.html" class="submenu">BMX Bike</a></li>
+                    </ul>
+                </li>
+                <li><a href="services.html">Services</a></li>
+                <li class="active"><a href="contact.html">Contact us</a></li>
+            </ul>		
+        </nav>
+        
+        <main>
+            <h2>Contact Us</h2>
+             <div class="formInfo">
+                <fieldset>
+                    <article class="map">
+                        <h4>Our Address:</h4>
+                        <p>3950 Valley Comomons Dr.<br>
+                            Bozeman, Montana</p>
+                        <h4>Hours of Operation:</h4>
+                        <p>Mon-Sat: 10am-7pm<br>
+                        Sun: Closed</p>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2787.9316277610997!2d-111.09290618499078!3d45.67227287910402!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5345459ab72cb6df%3A0xbb98968f9648ea88!2s3950+Valley+Commons+Dr%2C+Bozeman%2C+MT+59718!5e0!3m2!1sen!2sus!4v1523456857762" width="400" height="300" style="border:0" allowfullscreen></iframe>
+                    </article>
+                </fieldset>
+                <!--<form action="thanks.html" name="storm" id="weatherEvent">-->
+                <form name="b-form" id="b-form"  onsubmit="alert('Your message has been sent. Thank you.')" id="contactUs">
+                    <fieldset>
+                        <legend><span>Personal Information</span></legend>
+                        <label><span>Full Name:</span><input name="fullname" type="text" value="" pattern="[a-zA-Z .-_]{5,99}" placeholder="Full Name" required></label>
+                    <label><span>Email:</span><input name="email" type="email" value="" placeholder="email@gmail.com"></label>
+                        <label><span>Comments:</span>
+                            <textarea name="comments" rows="10" cols="45"></textarea>
+                        </label>
+                        <input type="submit" value="Submit" class="submitBtn">
+                        
+                    </fieldset>
+                </form>
+            </div>
+        </main>
+        
+        <footer>
+            <aside>
+                3950 Valley Commons Drive<br>
+                Bozeman, MT 59715<br>
+                (123) 555 1234 <br>
+                The-Mountain-Spoke@gmail.com<br>
+                <a href="contact.html">Contact</a> | <a href="sources.html">Resources</a> | <a href="overviewVideo.html">Overview Video</a>
+            </aside>
+            <p class="footer-bar">&copy;2018 All Rights Reserved &vert; The Mountain Spoke &vert; <span id="currentdate"></span></p>
+        </footer>
+
+        <script src="scripts/hamburger.js"></script>
+        <script src="scripts/currentdate.js"></script> 
+        <script src="scripts/repairs.js"></script>
+        <script src="scripts/jquery.js"></script>
+
+    </body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>The Moutain Spoke</title>
+        <meta name="author" content="Sterling Welker">
+        <meta name="description" content="Sales page for The Mountain Spoke.">
+        <!-- external style references in the proper cascading order -->    
+        <link href="https://fonts.googleapis.com/css?family=Permanent+Marker|Trirong" rel="stylesheet">  <!-- Google API font reference -->
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">  <!-- Google API font reference -->
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">  <!-- Google API font reference -->
+        <link href="styles/normalize.css" rel="stylesheet"> <!-- normalize useragent/browser defaults -->
+        <link href="styles/main.css" rel="stylesheet">    <!-- default styles - small/phone views -->
+        <link href="styles/medium.css" rel="stylesheet">  <!-- medium/tablet views -->
+        <link href="styles/large.css" rel="stylesheet">   <!-- large/wide/desktop views --> 
+        
+    </head>
+    <body>
+
+        <header class="container">
+            <a href="home.html"><img src="images/bike-logo.jpg" alt="The site logo"></a>
+            <div>
+              <h1>The Mountain Spoke</h1>
+                <div class = "subheading">Grasp life by the handlebars!</div>
+            </div>
+        </header>
+
+        <!-- site navigation use placeholder references -->
+        <nav class="mainMenu">
+            <button onclick="toggleNavMenu()">&#9776;</button>
+            <ul id="primaryNav" class="hide">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="tours.html">Tours</a></li>
+                <li><a href="event.html">Event</a></li>
+                <li class="active"><a href="#">Sales</a>
+                    <ul>
+                        <li><a href="sales1.html" class="submenu">MTN Bike</a></li>
+                        <li><a href="sales2.html" class="submenu">Road Bike</a></li>
+                        <li><a href="sales3.html" class="submenu">BMX Bike</a></li>
+                    </ul>
+                </li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact us</a></li>
+            </ul>		
+        </nav>
+        
+        <main>
+             <div class="bicycle">
+                <h2>Vitus Sommet VR Suspension</h2>
+                <h3>$2,149.99</h3>
+                <article class="detail">
+                    <div class="vitus">
+                        <img src="images/vitus.jpg" alt="Picture of Vitus Sommet">
+                    </div>
+                    <div class="specs">
+                        <ul>
+                            <li><strong>Frame Size:</strong>43cm (17"), 52cm (20.5"), 38cm (15"), 48cm (19")</li>
+                            <li><strong>Wheel Size:</strong> 27.5" (650b)</li>
+                            <li><strong>Frame: </strong>Hydroformed Triple Butted 6061-T6 Aluminium frame with patented four-bar V-Link rear suspension, 160mm travel</li>
+                            <li><strong>Forks: </strong>RockShox Yari RC, 170mm travel, DebonAir spring, Motion Control IS Damper, External Rebound adjuster, Low Speed Compression to Lock, Ø35mm Alloy Stanchions – Fast Black coating, tapered aluminium steerer, Boost 15x110mm Axle, 46mm offset, Maxle Stealth</li>
+                            <li><strong>Shock:</strong> RockShox Super Deluxe R - Trunnion, Native metric Design, Debon Air Spring, External Rebound Damping Adjustment, ML1 205x62.5mm</li>
+                        </ul>
+                        <p>Go anywhere and ride everything on the Vitus’ Sommet<br>VR Suspension Bike,a one-stop-shop do-it-all aluminium MTB<br>machine. Designed for enduro riding aswell as all-mountain<br>and downhill action, the aggressive Sommet VR Suspension<br>Bike will help you climb any peak with ease before hammering back down<br>the most technical and challengingterrain you can find. And the<br>best part? You’ll still be fresh to do it all again!</p>
+                    </div>
+                </article>
+                 <button type="button" onclick="alert('Item successfully added to cart!')">Add to Cart</button>
+            </div>
+        </main>
+        
+        <footer>
+            <aside>
+                3950 Valley Commons Drive<br>
+                Bozeman, MT 59715<br>
+                (123) 555 1234 <br>
+                The-Mountain-Spoke@gmail.com<br>
+                <a href="contact.html">Contact</a> | <a href="sources.html">Resources</a> | <a href="overviewVideo.html">Overview Video</a>
+            </aside>
+            <p class="footer-bar">&copy;2018 All Rights Reserved &vert; The Mountain Spoke &vert; <span id="currentdate"></span></p>
+        </footer>
+
+        <script src="scripts/hamburger.js"></script>
+        <script src="scripts/currentdate.js"></script> 
+        <script src="scripts/jquery.js"></script>
+ 
+    </body>
+</html>

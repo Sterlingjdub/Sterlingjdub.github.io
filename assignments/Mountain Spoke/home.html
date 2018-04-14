@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>The Moutain Spoke</title>
+        <meta name="author" content="Sterling Welker">
+        <meta name="description" content="Home page for The Mountain Spoke.">
+        <!-- external style references in the proper cascading order -->    
+        <link href="https://fonts.googleapis.com/css?family=Permanent+Marker|Trirong" rel="stylesheet">  <!-- Google API font reference -->
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">  <!-- Google API font reference -->
+        <link href="https://fonts.googleapis.com/css?family=Georgia" rel="stylesheet">  <!-- Google API font reference -->
+        <link href="styles/normalize.css" rel="stylesheet"> <!-- normalize useragent/browser defaults -->
+        <link href="styles/main.css" rel="stylesheet">    <!-- default styles - small/phone views -->
+        <link href="styles/medium.css" rel="stylesheet">  <!-- medium/tablet views -->
+        <link href="styles/large.css" rel="stylesheet">   <!-- large/wide/desktop views --> 
+        
+    </head>
+    <body>
+
+        <header class="container">
+            <a href="home.html"><img src="images/bike-logo.jpg" alt="The site logo"></a>
+            <div>
+              <h1>The Mountain Spoke</h1>
+                <div class = "subheading">Grasp life by the handlebars!</div>
+            </div>
+        </header>
+
+        <nav class="mainMenu">
+            <button onclick="toggleNavMenu()">&#9776;</button>
+            <ul id="primaryNav" class="hide">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="tours.html">Tours</a></li>
+                <li><a href="event.html">Event</a></li>
+                <li><a href="#">Sales</a>
+                    <ul class="submenu">
+                        <li><a href="sales1.html" class="submenu">MTN Bike</a></li>
+                        <li><a href="sales2.html" class="submenu">Road Bike</a></li>
+                        <li><a href="sales3.html" class="submenu">BMX Bike</a></li>
+                    </ul>
+                </li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact us</a></li>
+            </ul>		
+        </nav>
+
+        <main>
+            
+            <h1>Welcome to Bozeman, MOntana!</h1>
+            
+            <div class="flexbox1">
+                <img src="images/adventure-bicycle-bike.jpg" alt="Cycling Event">
+                <div>
+                    <p class="CTAction">Don't miss out. <br> The adventure of a lifetime <br>awaits!</p>
+                    <button type="button"><a href="event.html">Join now!</a></button>
+                </div>     
+            </div>
+            <div class="providedInfo">
+                <article class="saleService">
+                    <h2>Sales &amp; Service</h2>
+                    <p>
+                    &#8226; Bikes for everybody.  We have what you need! </p>
+                    <img src="images/bicycle-bike-blur.jpg" alt="Upclose picture of bike tire">
+                    
+                </article>
+
+                <article class="tours">
+                    <h2>Tours</h2>  
+                    <p>&#8226; A bike ride a day keeps the doctor away.  Join us on one of our many weekend tours!</p>
+                    <img src="images/tour-pic.jpg" alt="Picture of biking tour">
+                </article>
+                
+                 <article class="events">
+                        <h2>Bozeman Events</h2>
+                        <p>&#8226; Keep calm, and ride a bike.  Events for all ages and skill levels!</p>
+                        <img src="images/event-pic.jpg" alt="Picture of bicyclist in the air">
+                </article>               
+            </div>
+        </main>
+
+        <footer>
+            <aside>
+                3950 Valley Commons Drive<br>
+                Bozeman, MT 59715<br>
+                (123) 555 1234 <br>
+                The-Mountain-Spoke@gmail.com<br>
+                <a href="contact.html">Contact</a> | <a href="sources.html">Resources</a> | <a href="overviewVideo.html">Overview Video</a>
+            </aside>
+            <p class="footer-bar">&copy;2018 All Rights Reserved &vert; The Mountain Spoke &vert; <span id="currentdate"></span></p>
+        </footer>
+
+        <script src="scripts/hamburger.js"></script>
+        <script src="scripts/currentdate.js"></script> 
+        <script src="scripts/jquery.js"></script>
+    </body>
+</html>
