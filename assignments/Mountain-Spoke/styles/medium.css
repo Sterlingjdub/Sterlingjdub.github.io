@@ -1,0 +1,205 @@
+@media only screen and (min-width: 37.5em) {
+  /* Only CSS rules that need to be changed to meet the layout needs from small to medium go in here */
+    
+    header h1 {
+        font-size: 39px;
+    }
+    
+    header .subheading {
+        font-size: 1rem;
+    }
+    
+    header img{
+        display: flex;
+        width: auto;
+    height: 7.5rem;
+    }
+    
+    /*---------NAV--------*/
+    nav button { 
+        display:none;
+    }  /* hamburger button does not need to be shown */
+    
+    nav #primaryNav{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    nav #primaryNav li{
+        flex-grow: 1;
+    }
+    
+    nav li > ul {
+        position: absolute;
+        width:17%;
+    }
+    nav ul li a {
+        padding: 0.8rem 0.3rem ;
+    }
+    
+    nav ul.hide {
+        display: flex;
+    }
+    
+    main h2 {
+        font-size: 24px;
+        padding: 2%;
+        border: none;
+    }
+    
+    main h1, h2, h3 {
+        letter-spacing: 0.05rem;
+    }
+    
+    main p, main article.info li {
+        font-size: 1rem;
+    }
+    
+    main div article.flexbox1 p {
+        line-height: 2rem;
+    }
+    
+    main button {
+        font-size: 1.5rem;
+        width: 100%;
+    }
+    
+    main .sales button {
+        width: 60%;
+    }
+    
+    main p.CTAction {
+        font-size: 28px;;
+        line-height: 2rem;
+    }
+    
+    main .flexbox1 {
+        display: flex;
+        justify-content: space-around;
+        align-items:center;
+    }
+    
+    main .flexbox1 > img { 
+        width: 45%;
+        margin: 3%;
+    } 
+    
+    main div article.flexbox1 > img{ 
+        margin: 2% 3%;
+        width: 40%; 
+    } 
+    
+    main div article.flexbox1 > img.order{ 
+        order: -1;
+    } 
+    
+    
+     main .flexbox2 {
+        display: flex;
+        justify-content: space-around;
+        align-items:center;
+    }
+    
+    main .flexbox2 > img { 
+        width: 45%;
+        margin: 3%;
+    } 
+    
+    main div article.flexbox2 > img{ 
+        margin: 2% 3%;
+        width: 40%; 
+    } 
+    
+    main div article.flexbox2 > img.order{ 
+        order: -1;
+    } 
+    
+    main > .grid,  main > .grid1 {
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 1.5rem;
+        line-height: normal;
+    }
+    
+     main article.info p {
+        letter-spacing: 0.02rem;
+    }
+        
+    form legend {
+        font-size: 1.5rem;
+    }
+    
+    form label span {
+        font-size: 1.2rem;
+        padding: 1.6% 0 0.7%;
+    }
+
+    input, textarea  {
+        font-size: 1rem;
+        width: 40%;
+    }
+    
+    input.submitBt {
+        font-size: 1.3rem;
+    }
+    
+    main p.discount {
+        width: 50%;
+    }
+    
+    table {
+        margin: 2% 5%; 
+    }
+    
+    td {
+        letter-spacing: 0.05rem;
+    }
+    
+    .providedInfo{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        align-items: stretch;
+    }
+
+    .cycleDivide{
+        flex-basis: 100%;
+        margin: 0 0 0 0;
+    }
+
+    .saleService{
+        flex-basis: 32%;
+        margin: 2% 1% 2% 0;
+    }
+
+    .events{
+        flex-basis: 32%;
+        margin: 2% 0 2% 1%;
+    }
+
+    .tours{
+        flex-basis: 32%;
+        margin: 2% 1% 2% 1%;
+    }
+    
+    /************ Sales Page **************/
+   
+
+    article.detail{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-around;
+        align-items: center;
+        margin: 0 5% 2% 5%;
+    }
+
+    
+    .detail img{
+        width: 100%;
+    }
+
+    .vitus {
+        flex-basis: 50%;
+    }
+}

@@ -1,0 +1,10 @@
+{"repairs": [
+    {"type": "Basic Tune Up", "price": 60},
+    {"type": "Annual Tune Up", "price": 130},
+    {"type": "Deep Drivetrain Clean/Tune", "price": 80},
+    {"type": "Flat Repair", "price": 15},
+    {"type": "Flush Disc Brakes (per brake)", "price": 20},
+    {"type": "True Wheels (per wheel)", "price": 15},
+    {"type": "Suspension Overhaul", "price": 120}
+]
+}

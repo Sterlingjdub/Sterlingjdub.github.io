@@ -1,0 +1,123 @@
+@media only screen and (min-width: 64em) {
+  /* Only CSS rules that need to be changed to meet the layout needs from medium to large/wide go in here */
+    
+    
+    header h1 {
+        font-size: 42px;
+    }
+    
+    header .subheading {
+        font-size: 28px;
+    }
+    
+    nav ul {
+        font-size: 1.4rem;
+    }
+    
+    nav ul li a {
+        padding: 0.8rem 2rem;
+    }
+    
+    main h1 {
+        font-size: 50px;
+    }
+    
+    main h2 {
+        font-size: 50px;
+    }
+    
+    main h3 {        
+        font-size: 2.7rem;
+    }
+    
+    main p, main article.info li {
+        font-size:1.3rem;
+    }
+    
+    main p.CTAction {
+        font-size: 32px;
+        line-height: 2.5rem;
+    }
+    
+    main button {
+        font-size: 2.2rem;
+        word-spacing: 0.6rem;
+    }
+    
+    main .sales button {
+        font-size: 1.8rem;
+    }
+    
+    footer {
+        font-size: 14px;
+    }
+    
+    footer > p {
+        font-size: 12px;
+    }
+    
+    main > article.flexbox1 p {
+        line-height: 2rem;
+    }
+    
+    main > article.flexbox2 p {
+        line-height: 2rem;
+    }
+    
+    main article.info p {
+        line-height: 1.7rem;
+        letter-spacing: 0.03rem;
+    }
+    
+    form legend {
+        font-size: 2rem;
+    }
+    
+    form label span {
+        font-size: 1.5rem;
+    }
+    
+    input, textarea {
+        font-size: 1.2rem;
+    }
+    
+    input.submitBt {
+        font-size: 1.5rem;
+        word-spacing: 1rem;
+        letter-spacing: 0.1rem;
+    }
+    
+    main p.small {
+        font-size: 1rem;
+    }
+
+    main p.price {
+        font-size: 2.7rem;
+    }
+    
+    saleService{
+        flex-basis: 32%;
+        margin: 2% 1% 2% 0;
+    }
+
+    .events{
+        flex-basis: 32%;
+        margin: 2% 0 2% 1%;
+    }
+
+    .tours{
+        flex-basis: 32%;
+        margin: 2% 1% 2% 1%;
+    }
+    
+    .formInfo{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: flex-start;
+        align-items: baseline;
+    }
+
+    fieldset {
+        flex-basis: 50%;
+    }
+}

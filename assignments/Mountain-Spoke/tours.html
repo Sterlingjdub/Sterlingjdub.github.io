@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>The Moutain Spoke</title>
+        <meta name="author" content="Sterling Welker">
+        <meta name="description" content="Adventure Tour page for The Mountain Spoke.">
+        <!-- external style references in the proper cascading order -->    
+        <link href="https://fonts.googleapis.com/css?family=Permanent+Marker|Trirong" rel="stylesheet">  <!-- Google API font reference -->
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">  <!-- Google API font reference -->
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">  <!-- Google API font reference -->
+        <link href="styles/normalize.css" rel="stylesheet"> <!-- normalize useragent/browser defaults -->
+        <link href="styles/main.css" rel="stylesheet">    <!-- default styles - small/phone views -->
+        <link href="styles/medium.css" rel="stylesheet">  <!-- medium/tablet views -->
+        <link href="styles/large.css" rel="stylesheet">   <!-- large/wide/desktop views --> 
+        
+    </head>
+    <body>
+
+        <header class="container">
+            <a href="home.html"><img src="images/bike-logo.jpg" alt="The site logo"></a>
+            <div>
+              <h1>The Mountain Spoke</h1>
+                <div class = "subheading">Grasp life by the handlebars!</div>
+            </div>
+        </header>
+
+        <!-- site navigation use placeholder references -->
+        <nav class="mainMenu">
+            <button onclick="toggleNavMenu()">&#9776;</button>
+            <ul id="primaryNav" class="hide">
+                <li><a href="home.html">Home</a></li>
+                <li class="active"><a href="#">Tours</a></li>
+                <li><a href="event.html">Event</a></li>
+                <li><a href="#">Sales</a>
+                    <ul class="submenu">
+                        <li><a href="sales1.html" class="submenu">MTN Bike</a></li>
+                        <li><a href="sales2.html" class="submenu">Road Bike</a></li>
+                        <li><a href="sales3.html" class="submenu">BMX Bike</a></li>
+                    </ul>
+                </li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact us</a></li>
+            </ul>		
+        </nav>
+        
+        <main>
+            <h2>Adventure Tours</h2>
+            <article class="flexbox2">
+                    <div>
+                        <h3>Adventure is out there!</h3>
+                        <p>"Life is either a daring adventure or nothing."<br> ~Helen Keller<br><br>Too many times, we get caught up in the day to day duties of life, and don't take time to enjoy ourselves and the world around us.<br> Now's your chance to do both.  Come and join us on one of our many weekend Adventure Tours!
+                    </div>
+                    <img src="images/adventure-tours.jpg" alt= "Adventure Tours">
+            </article>
+
+            <div class="grid">
+                <article class="info">
+                    <h3>Emerald Lake</h3>
+                    <ul>
+                        <li>Days: Friday-Sunday</li>
+                        <li>Length: 10 total miles</li>
+                        <li>Skill Level Required: Intermediate </li>
+                        <li>Cost: &dollar; 25.00 </li>
+                        <li>Located in Bozeman, some consider this the best ride in Montana. There is a stiff, 2k ft climb to a gorgeous high alpine lake. This of course  makes for a killer downhill on the return.</li>
+                    </ul>
+                    <img src="images/emerald-lake.jpg" alt="Emerald Lake">
+                </article>
+                <article class="info">
+                    <h3>Grassy Mountain Loop</h3>
+                    <ul>
+                        <li>Days: Saturday-Sunday</li>
+                        <li>Length: 16 total miles</li>
+                        <li>Skill Level Required: Intermediate</li>
+                        <li>Cost: &dollar; 20.00 </li>
+                        <li>Located in Bozeman, this loop is a long, beautiful ride with many meadows and switchbacks along the way. </li>
+                    </ul>
+                    <img src="images/grassy-mountain.jpg" alt="Grassy Mountain Loop">
+                </article>
+                <article class="info">
+                    <h3>Lick Creek</h3>
+                    <ul>
+                        <li>Days: Wednesday, Thursday, Saturday</li>
+                        <li>Length: 9 total miles</li>
+                        <li>Skill Level Required: Beginner </li>
+                        <li>Cost: &dollar; 15.00 </li>
+                        <li>Located in Bozeman, this loop will take you on a relaxing, scenic ride right along Lick Creek.  Along the way are a couple of resting areas perfect for picnics. </li>
+                    </ul>
+                    <img src="images/lick-creek.jpg" alt="Lick Creek">
+                </article>
+            </div>
+        </main> 
+
+        <footer>
+            <aside>
+                3950 Valley Commons Drive<br>
+                Bozeman, MT 59715<br>
+                (123) 555 1234 <br>
+                The-Mountain-Spoke@gmail.com<br>
+                <a href="contact.html">Contact</a> | <a href="sources.html">Resources</a> | <a href="overviewVideo.html">Overview Video</a>
+            </aside>
+            <p class="footer-bar">&copy;2018 All Rights Reserved &vert; The Mountain Spoke &vert; <span id="currentdate"></span></p>
+        </footer>
+
+        <script src="scripts/hamburger.js"></script>
+        <script src="scripts/currentdate.js"></script> 
+        <script src="scripts/jquery.js"></script>
+
+    </body>
+</html>
