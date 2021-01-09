@@ -5,8 +5,7 @@
     <title>WDD 230 Assignment Portal | Sterling J. Welker | BYU-Idaho</title>
     <meta name="description" content="This is the assignment portal page for Sterling Welker in WDD 230: Web Frontend Development at BYU-Idaho.">
     <meta name="viewpoint" content="width=device-width, initial-scale=1">
-    
-    
+        
     <link rel="stylesheet" href="styles/main.css">
 </head>
     
@@ -16,9 +15,6 @@
         <img src="images/profile-picture.jpeg" width="200"  alt="My Profile Picture">
         <h1>Sterling J. Welker</h1>
     </header>
-    <nav>
-        <!--This will be where the future main menu will be placed-->
-    </nav>
     <main>
         <h2>WDD 230: Assignment Portal</h2>
         <ul>
@@ -28,10 +24,15 @@
         </ul>
     </main>
     <footer>
-        <p>&copy; 2021 | Sterling J. Welker | Utah | 
+        <p>&copy; <span id="year"></span> | Sterling J. Welker | Utah | 
             <a href="http://www.byui.edu/online">BYU-Idaho Online Learning</a>
         </p>
+        <div class="date">
+            Last updated:
+            <span id="lastUpdated"></span>
+        </div>
+        
     </footer>
-    
+    <script src="js/date.js"></script>
 </body>
 </html>
