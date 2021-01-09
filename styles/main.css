@@ -26,14 +26,17 @@ header, main, footer {
 
 header, footer, footer a {
     text-align: center;
-    background-color: darkgrey;
+    background-color: cornflowerblue;
     color: whitesmoke;
+    border-radius: 5px;
 }
 
 header img {
     width: 200px;
     height: auto;
     float: right;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px darkgray;
 }
 
 footer {
