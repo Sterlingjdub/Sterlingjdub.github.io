@@ -1,0 +1,16 @@
+@media (min-width: 64em) {
+    .home-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 1em;
+    }
+    .Ikea { 
+        grid-column: 1/2;
+    }
+    .Nike {
+        grid-column: 2/3;
+    }
+    section:nth-child(3) {
+        grid-column: span 1;
+    }
+}

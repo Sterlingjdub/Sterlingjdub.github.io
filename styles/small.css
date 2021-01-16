@@ -1,46 +1,49 @@
-* { margin: 5px; box-sizing: border-box; } 
+* {box-sizing: border-box; } 
 
 body { 
     font-size: 16px; 
     line-height: 30px;
-    font-family: Ubuntu, sans-serif;
+    font-family: "Roboto", "Times New Roman", serif;
     color: black;
+}
+h1, h2 {
+    font-family: "Bebas Neue", "Arial Black", sans-serif;
 }
 
 h1 {
-    font-size: 2.5rem;
+    font-size: 1.9rem;
     color: black;
 }
 
 h2 {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     text-align: center;
     border-bottom: 2px solid #bbb;
 }
-
-header, main, footer {
+main {
     margin: 3rem auto;
+}
+header, footer {
     padding: 1rem;
-    max-width: 1000px;
+    max-width: 100%;
+    margin: 0 auto;
 }
 
 header, footer, footer a {
     text-align: center;
     background-color: cornflowerblue;
     color: whitesmoke;
-    border-radius: 5px;
+
 }
 
 header img {
     width: 200px;
     height: auto;
-    float: right;
     border-radius: 5px;
-    box-shadow: 5px 5px 5px darkgray;
+
 }
 
 footer {
     font-size: smaller;
 }
 
-.style1 {margin: 0 auto; border: 1px solid #bbb; padding: 5px; background-color: #eee; line-height: 1.5em;}
