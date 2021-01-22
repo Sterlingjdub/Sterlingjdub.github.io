@@ -20,6 +20,6 @@
         grid-column: 2/3;
     }
     section:nth-child(3) {
-        grid-column: span 2;
+        grid-column: span 2; 
     }
 } 
