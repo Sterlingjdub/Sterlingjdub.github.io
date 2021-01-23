@@ -1,6 +1,5 @@
-@media (min-width: 64em) {
+@media only screen and (min-width: 64em) {
     .home-grid {
-        display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-gap: 1em;
     }
