@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8">
+    <title>WDD 230 Weather Website | Sterling J. Welker | BYU-Idaho</title>
+    <meta name="description" content="This page shows different website design principles.">
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@300&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="css-folder/normalize.css">
+    <link rel="stylesheet" href="css-folder/small.css">
+    <link rel="stylesheet" href="css-folder/medium.css">
+    <link rel="stylesheet" href="css-folder/large.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo-box">
+            <img
+              class="weather-logo"
+              src="images/weather_logo.png"
+              alt="Check on Weather website logo"
+            />
+            <h1>Check on Weather</h1>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="target-audience.html">Target Audience</a></li>
+            <li><a href="color-scheme.html">Color Scheme</a></li>
+            <li><a href="typography.html">Typography</a></li>
+          </ul>
+        </nav>
+      </header>
+    <main class="home-grid">
+        <section>
+            <div class="site-colors">
+                <h2>Color Scheme</h2>
+                <p>This is a color scheme that will be used throughout 
+                    our website in order to enhance our visitors' experience.
+                </p>
+                <!-- Coolors Palette Widget -->
+                <script src="https://coolors.co/palette-widget/widget.js"></script>
+                <script data-id="030397825270764567">new CoolorsPaletteWidget("030397825270764567", ["11376a","86a5ae","ffa400","f3f6f7","080b0c"]); </script>
+            </div>
+        </section>
+        <section>
+            <div class="site-color-location">
+                <h2>Color Usage</h2>
+                <p>
+                    <b>#11376A (Prussian Blue)</b><br>
+                    This is our main color. It will be used as the color for the 
+                    header and footer. It will also be scattered throughout the website 
+                    as needed.
+                </p>
+                <p>
+                    <b>#86A5AE (Pewter Blue)</b><br>
+                    This is our secondary color. It will also be used in the header as 
+                    the visitor hovers with their mouse over each menu option. It will also 
+                    be scattered throughout the website as needed.
+                </p>
+                <p>
+                    <b>#FFA400 (Orange Web)</b><br>
+                    This is our accent color. It will be used as the font color for the menu,
+                    and will also be used to highlight certain aspects of the website we believe
+                    the visitor should pay attention to.
+                </p>
+                <p>
+                    <b>#F3F6F7 (Cultured)</b><br>
+                    This color will be used as the website's background color. We will also use it 
+                    for the font color of our footer.
+                </p>
+                <p>
+                    <b>#080B0C (Rich Black FOGRA 39)</b><br>
+                    This color will be used as our main font color for headers and paragraphs.
+                </p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; <span id="year"></span> | Sterling J. Welker | Utah | 
+            <a href="http://www.byui.edu/online">BYU-Idaho Online Learning</a>
+        </p>
+        <div class="date">
+            Last updated:
+            <span id="lastUpdated"></span>
+        </div>
+    </footer>
+    <script src="js/date.js"></script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8">
+    <title>WDD 230 Weather Website | Sterling J. Welker | BYU-Idaho</title>
+    <meta name="description" content="This page shows different website design principles.">
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@300&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="css-folder/normalize.css">
+    <link rel="stylesheet" href="css-folder/small.css">
+    <link rel="stylesheet" href="css-folder/medium.css">
+    <link rel="stylesheet" href="css-folder/large.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo-box">
+            <img
+              class="weather-logo"
+              src="images/weather_logo.png"
+              alt="Check on Weather website logo"
+            />
+            <h1>Check on Weather</h1>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="target-audience.html">Target Audience</a></li>
+            <li><a href="color-scheme.html">Color Scheme</a></li>
+            <li><a href="typography.html">Typography</a></li>
+          </ul>
+        </nav>
+      </header>
+    <main class="home-grid">
+        <section>
+            <div class="typography">
+                <h2>Typography</h2>
+                <h3 class="font-example">Bebas Neue</h3>
+                <p>
+                    Bebas Neue will be used as the font for all headers, and also 
+                    the name and navigation bar. We chose this font as it is bold, pops out, 
+                    is still professional. It draws the visitors attention right to any headline.
+                </p>
+                <h3 class="font-example-2">Roboto</h3>
+                <p>
+                    Roboto will be used for the paragraph text throughout the website. We chose 
+                    this font as it is easy to read with its modern style and nice letter spacing. This 
+                    will help our visitors to enjoy their time while reading about upcoming 
+                    events and weather updates.
+                </p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; <span id="year"></span> | Sterling J. Welker | Utah | 
+            <a href="http://www.byui.edu/online">BYU-Idaho Online Learning</a>
+        </p>
+        <div class="date">
+            Last updated:
+            <span id="lastUpdated"></span>
+        </div>
+    </footer>
+    <script src="js/date.js"></script>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8">
+    <title>WDD 230 Weather Website | Sterling J. Welker | BYU-Idaho</title>
+    <meta name="description" content="This page shows different website design principles.">
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@300&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="css-folder/normalize.css">
+    <link rel="stylesheet" href="css-folder/small.css">
+    <link rel="stylesheet" href="css-folder/medium.css">
+    <link rel="stylesheet" href="css-folder/large.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo-box">
+            <img
+              class="weather-logo"
+              src="images/weather_logo.png"
+              alt="Check on Weather website logo"
+            />
+            <h1>Check on Weather</h1>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="target-audience.html">Target Audience</a></li>
+            <li><a href="color-scheme.html">Color Scheme</a></li>
+            <li><a href="typography.html">Typography</a></li>
+          </ul>
+        </nav>
+      </header>
+    <main class="grid-container">
+        <section>
+            <div class="site-name">
+                <h2>Website Domain/Logo</h2>               
+                <img
+                class="weather-logo"
+                src="images/weather_logo.png"
+                alt="Check on Weather, website logo"
+                />
+                <p>The official domain for Check on Weather <br>
+                    <b>www.checkonweather.com</b>
+                </p>
+            </div>
+        </section>
+        <section>
+            <div class="site-purpose">
+                <h2>Website Purpose</h2>
+                <p>Here at "Check on Weather", we provide our visitors 
+                    with the weather updates that they need for their busy lives. 
+                    We understand that nobody enjoyes getting caught off guard in the rain without an
+                    umbrella. That's why we pride ourselves in our live, weather updates so that this
+                    won't happen to you. We're also here to help our visitors stay up to date on 
+                    current news and upcoming events throughout our surrounding communities.
+  
+                </p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; <span id="year"></span> | Sterling J. Welker | Utah | 
+            <a href="http://www.byui.edu/online">BYU-Idaho Online Learning</a>
+        </p>
+        <div class="date">
+            Last updated:
+            <span id="lastUpdated"></span>
+        </div>
+    </footer>
+    <script src="js/date.js"></script>
+</body>
+</html>
