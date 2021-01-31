@@ -1,0 +1,25 @@
+@media only screen and (min-width: 37.5em) {
+
+    header img {
+        max-width: 100px;
+    }
+    nav button {
+        font-size: 1.8em;
+    }
+    nav ul {
+        font-size: 1.4em;
+    }
+    h1 {
+        font-size: 2.5em;
+    }
+    h2 {
+        font-size: 1.8em;
+    }
+    h3 {
+        font-size: 1.3em;
+    }
+    main, footer {
+        max-width: 80%;
+        margin: auto;
+    }
+}

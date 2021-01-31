@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8">
+    <title>WDD 230 Weather Website | Sterling J. Welker | BYU-Idaho</title>
+    <meta name="description" content="This is the home page for Preston, Idaho.">
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@300&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo-box">
+            <img
+              class="weather-logo"
+              src="images/weather_logo.png"
+              alt="Check on Weather website logo"
+            />
+            <h1>Check on Weather</h1>
+        </div>
+        <nav>
+            <button onclick="toggleMenu()">&#9776; Menu</button>
+            <ul id="primaryNav" class="hide">
+                <li><a href="#">Home</a></li>
+                <li><a class="active" href="preston.html">Preston</a></li>
+                <li><a href="#">Soda Springs</a></li>
+                <li><a href="#">Fish Haven</a></li>
+                <li><a href="#">Storm Center</a></li>
+                <li><a href="#">Gallery</a></li>
+          </ul>
+        </nav>
+      </header>
+    <main class="grid-container">
+        <h2>Preston, Idaho</h2>
+        <section>
+            <div class="weather-summary">
+                <h3>Weather Summary</h3>               
+            </div>
+        </section>
+        <section>
+            <div class="forcast">
+                <h3>5-day Forcast</h3>
+            </div>
+        </section>
+        <section>
+            <div class="article-info">
+                <h3>Article</h3>
+            </div>
+        </section>
+        <section>
+            <div class="contact-info">
+                <h3>Contact Information</h3>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; Check on Weather | Sterling J. Welker 
+        </p>
+        <div class="Date">
+            <span id="currentDate"></span>
+        </div>
+    </footer>
+    <script src="js/currentDate.js"></script>
+    <script src="js/hamburger.js"></script>
+</body>
+</html>

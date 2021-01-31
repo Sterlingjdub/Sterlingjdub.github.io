@@ -1,0 +1,41 @@
+@media only screen and (min-width: 60em) {
+	nav a {
+		font-size: 1.1rem;
+	}
+	main {
+		grid-template-columns: 1fr;
+	}
+    
+    header img {
+        max-width: 100%;
+    }
+
+    nav a {
+        color: #EAA821;
+        text-decoration: none;
+        padding: 1%;
+    }
+    nav button {
+        display: none;
+    }
+    nav ul { 
+        display: flex;
+        justify-content: space-around;
+        font-size: 1.6em;
+    }
+    nav ul li { 
+        flex: 1 1 100%; 
+    }
+    nav ul li a { 
+        border: none;
+    }
+    nav ul.hide {
+        display: flex;
+    }
+    .logo-box {
+        border: none;
+    }
+    p {
+        font-size: 18px;
+    }
+}
