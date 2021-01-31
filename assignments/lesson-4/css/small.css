@@ -90,6 +90,7 @@ h1 {
     font-family: "Bebas Neue", "Arial Black", sans-serif;
     text-align: center;
     color: #F3F6F7;
+    margin-bottom: 0;
 }
   
 h2 {
@@ -126,7 +127,7 @@ p {
     margin-top: 10px;;
 }
   
-section {
+main section {
     border: 1px solid #11376A;
     border-radius: 5px;
     margin: 20px;

@@ -1,7 +1,7 @@
 @media only screen and (min-width: 37.5em) {
 
-    header img {
-        max-width: 100%;
+    .weather-logo {
+        max-width: 80px;
     }
     nav button {
         font-size: 1.8em;

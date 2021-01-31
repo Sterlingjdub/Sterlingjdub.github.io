@@ -2,7 +2,10 @@
 	main {
 		grid-template-columns: 1fr;
 	}
-
+    
+    .weather-logo {
+        max-width: 100px;
+    }
     nav a {
         color: #EAA821;
         text-decoration: none;
