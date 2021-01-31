@@ -106,6 +106,13 @@ h2 {
 h3 {
     font-size: 1em;
 }
+.slogan {
+    font-size: .8em;
+    margin-bottom: 0;
+    font-family: "Roboto", "Times New Roman", serif;
+    text-align: center;
+    color: #F3F6F7;
+}
 
 p {
     font-size: 16px;
