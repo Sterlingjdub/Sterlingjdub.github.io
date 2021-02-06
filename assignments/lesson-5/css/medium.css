@@ -29,7 +29,7 @@
     }
     .banner-img {
         display: block;
-        max-width: 100%;
+        width: 100%;
     }
     .banner-img-sm {
         display: none;
@@ -56,7 +56,7 @@
     }
     .article-img {
         float: right;
-        max-width: 90%;
+        width: 90%;
     }
     .grid-container, footer {
         max-width: 80%;

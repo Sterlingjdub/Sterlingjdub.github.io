@@ -121,7 +121,7 @@ h3 {
 }
 .banner-img-sm {
     grid-column: 1/2;
-    max-width: 100%;
+    width: 100%;
 }
 
 p {
@@ -197,7 +197,7 @@ footer {
     text-align: center;
     color: #F3F6F7;
     padding: 15px 5px 15px;
-    max-width: 100%;
+    width: 100%;
     margin: 0;
 }
 footer p {
