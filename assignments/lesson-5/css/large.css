@@ -42,7 +42,10 @@
     p {
         font-size: 18px;
     }
-
+    #banner {
+        width: 40%;
+        font-size: 24px;
+    }
     .hero-box {
         position: relative;
     }

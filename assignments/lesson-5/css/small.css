@@ -114,7 +114,13 @@ h3 {
     text-align: center;
     color: #F3F6F7;
 }
-
+#banner {
+    display: block;
+    background-color: #FFA400;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: -10px;
+}
 .banner-img {
     display: none;
     grid-column: 1/2;
@@ -203,6 +209,5 @@ footer {
 footer p {
     color: #F3F6F7;
 }
-  
   
     
