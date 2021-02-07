@@ -77,4 +77,17 @@
     .article-img {
         width: 100%;
     }
+    .contact {
+        display: flex;
+        justify-content: center;
+        flex-direction: initial;
+    }
+    .contact img {
+        margin: 20px;
+    }
+    iframe {
+        margin: 50px;
+        padding-left: 50px;
+    }
+    
 }

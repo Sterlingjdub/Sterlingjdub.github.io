@@ -58,8 +58,15 @@
         float: right;
         width: 90%;
     }
-    .grid-container, footer {
+    .grid-container {
         max-width: 80%;
+        margin: auto;
+    }
+    .contact-info img {
+        width: 36px;
+    }
+    footer {
+        max-width: 100%;
         margin: auto;
     }
 }
