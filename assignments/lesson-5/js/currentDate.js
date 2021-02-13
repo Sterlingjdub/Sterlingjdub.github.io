@@ -8,10 +8,3 @@ var year = d.getFullYear();
 
 document.getElementById("currentDate").innerHTML = dayOfTheWeek + ", " + day + " " + month + " " + year;
 
-// This will display the weekly banner only on Fridays
-if (day == 5) {
-    document.getElementById("banner").style.display = "block";
-}
-else {
-    document.getElementById("banner").style.display = "none";
-}
