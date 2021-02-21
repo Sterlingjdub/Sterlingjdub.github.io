@@ -1,1 +1,35 @@
 <!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8">
+    <title>WDD 230 Lazy Load Website | Sterling J. Welker | BYU-Idaho</title>
+    <meta name="description" content="This website will demontrate lazy loading for images.">
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+</head>
+<body>
+    <header>
+        <h1>Progressive Loading of Images</h1>
+    </header>
+    <main>
+        <picture>
+            <img src="images/placeholder.jpg" data-src="images/Arcade.jpg" alt="Entrance to an Arcade">
+        </picture>
+        <picture>
+            <img src="images/placeholder.jpg" data-src="images/arcade-machine.jpg" alt="Arcade joystick">
+        </picture>
+        <picture>
+            <img src="images/placeholder.jpg" data-src="images/switch.jpg" alt="Person playing a Nintendo Switch">
+        </picture>
+        <picture>
+            <img src="images/placeholder.jpg" data-src="images/xbox.jpg" alt="Somebody holding an Xbox controller">
+        </picture>
+        <picture>
+            <img src="images/placeholder.jpg" data-src="images/playstation.jpg" alt="Playstation 4 controller">
+        </picture>
+        <picture>
+            <img src="images/placeholder.jpg" data-src="images/VR.jpg" alt="Somebody playing VR">
+        </picture>
+    </main>
+    <script src="js/lazyload.js"></script>
+</body>
+</html>
