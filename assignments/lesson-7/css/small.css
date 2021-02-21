@@ -233,7 +233,24 @@ footer {
 footer p {
     color: #F3F6F7;
 }
-  
+
+/* Gallery Page */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+
+figure img {
+    filter: blur(0em);
+    transition: filter 0.5s;
+    margin: 10px;	
+}
+
+img[data-src] {
+    filter: blur(5px);
+}
 .clearfix:after {
     content: " "; /* Older browser do not support empty content */
     visibility: hidden;

@@ -90,4 +90,12 @@
         padding-left: 50px;
     }
     
+    /* Gallery Page */
+    .gallery-grid {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    figure:hover {
+        box-shadow: 0 0 10px 0 black;
+    }
 }
