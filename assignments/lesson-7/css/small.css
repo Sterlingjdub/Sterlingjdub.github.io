@@ -238,7 +238,8 @@ footer p {
 .gallery-grid {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 20px;
+    gap: 10px;
+    justify-content: center;
 }
 
 
@@ -246,6 +247,7 @@ figure img {
     filter: blur(0em);
     transition: filter 0.5s;
     margin: 10px;	
+    width: 90%;
 }
 
 img[data-src] {
