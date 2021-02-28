@@ -288,6 +288,9 @@ label, select, .radio {
 #ratingvalue {
     margin-left: 10px;
 }
+.regions {
+    width: 50%;
+}
 label span {
     display: block;
     font-size: 16px;

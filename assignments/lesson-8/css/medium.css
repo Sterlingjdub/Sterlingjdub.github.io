@@ -74,4 +74,9 @@
     .gallery-grid {
         grid-template-columns: 1fr 1fr;
     }
+
+    /* Storm Center */
+    .regions {
+        width: 40%;
+    }
 }
