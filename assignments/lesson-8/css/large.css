@@ -95,6 +95,10 @@
         grid-template-columns: 1fr 1fr 1fr;
     }
 
+    /* Storm Center */
+    .personal-info input {
+        width: 50%;
+    }
     figure:hover {
         box-shadow: 0 0 30px  black;
     }
