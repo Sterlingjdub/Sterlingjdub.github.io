@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <title>Preston, Idaho | Check on Weather</title>
+    <meta name="description" content="This is the home page for Preston, Idaho.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo-box">
+            <img class="weather-logo" src="images/sun-rain-cloud-emoji.png" alt="Check on Weather website logo" />
+            <section class="headings">
+                <h1>Check on Weather</h1>
+                <p class="slogan"><i>We check the weather, so you don't have to!</i></p>
+            </section>
+        </div>
+        <nav>
+            <button onclick="toggleMenu()">&#9776; Menu</button>
+            <ul id="primaryNav" class="hide">
+                <li><a class="active" href="index.html">Home</a></li>
+                <li><a href="/assignments/lesson-5/preston05.html">Preston</a></li>
+                <li><a href="#">Soda Springs</a></li>
+                <li><a href="#">Fish Haven</a></li>
+                <li><a href="/assignments/lesson-8/stormcenter.html">Storm Center</a></li>
+                <li><a href="/assignments/lesson-7/gallery-7.html">Gallery</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="grid-container">
+
+        </div>
+        <section class="contact">
+            <div class="map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5736740.280786325!2d-118.63121618107178!3d45.40646161441475!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5358ffa885e499e9%3A0xd06b300515f78758!2sIdaho!5e0!3m2!1sen!2sus!4v1614530089419!5m2!1sen!2sus"
+                    width="600" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+            <div class="contact-info">
+                <h3>Contact Information</h3>
+                <p>🎯 46 N Main St. Preston, ID. 83263</p>
+                <p>☎️ 208-555-5555</p>
+                <p>📧 weather@checkweather.com</p>
+                <a href="https://www.facebook.com/"><img src="images/facebook.png" alt="Facebook logo"></a>
+                <a href="https://twitter.com/"><img src="images/twitter.png" alt="Twitter logo"></a>
+                <a href="https://www.instagram.com/"><img src="images/instagram.png" alt="Instagram logo"></a>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; Check on Weather | Sterling J. Welker
+        </p>
+        <div class="Date">
+            <span id="currentDate"></span>
+        </div>
+    </footer>
+    <script src="js/currentDate.js"></script>
+    <script src="js/hamburger.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="js/webfontload.js"></script>
+    <script src="js/towninfo.js"></script>
+</body>
+
+</html>
