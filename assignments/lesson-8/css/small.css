@@ -258,17 +258,18 @@ form#conference {
     margin: 1em 3%;
 }
 fieldset {
-    background-color: blanchedalmond;
+    background-color: #EAECEC;
     border-radius: .8em;
     margin: 1.5em 1em 1em 1em;
-    border: #917a56 solid 1px;
+    border: 1px solid black;
+    
 }
 legend {
     color: #000;
     margin-left: 6%;
     padding: .5em;
-    border: #917a56 solid 1px;
-    background-color: #f2eee7;
+    border: 1px solid black;
+    background-color: skyblue;
     border-radius: .4em;
 }
 
@@ -280,8 +281,6 @@ label {
 label span {
     display: block;
     font-size: 18px;
-    font-family: 'Ubuntu', serif;
-    text-decoration: underline;
     color: #000;
     padding-top: .9em;
     padding-bottom: .1em;
@@ -290,14 +289,15 @@ label span {
 
 
 input.submitBtn {
-    color: #fff;
+    color: black;
     border: solid 1px #111;
-    border-radius: 7px;
+    border-radius: 5px;
     width: 25%;
     margin: .5em 0 1em 1em;
     font-size: 1em;
+
     padding: .6em;
-    background: #00be;
+    background: #FFA400;
     box-shadow: 4px 4px 10px #666;
 }
 
