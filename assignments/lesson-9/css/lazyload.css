@@ -1,0 +1,16 @@
+h1 {
+    text-align: center;
+}
+main {
+    display: grid;
+    grid-auto-rows: 400px;
+    gap: 20px;
+    justify-content: center;
+}
+img[data-src] {
+    filter: blur(5px);
+}
+img {
+    filter: blur(0em);
+    transition: filter 0.5s;
+}
