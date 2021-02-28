@@ -26,72 +26,71 @@
             <button onclick="toggleMenu()">&#9776; Menu</button>
             <ul id="primaryNav" class="hide">
                 <li><a href="#">Home</a></li>
-                <li><a href="lesson-05/preston05.html">Preston</a></li>
+                <li><a href="lesson-5/preston05.html">Preston</a></li>
                 <li><a href="#">Soda Springs</a></li>
                 <li><a href="#">Fish Haven</a></li>
                 <li><a  class="active" href="stormcenter.html">Storm Center</a></li>
-                <li><a href="lesson-07/gallery-7.html">Gallery</a></li>
+                <li><a href="lesson-7/gallery-7.html">Gallery</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <div class="gallery-grid">
-            <figure>
-                <picture>
-                    <img src="images/placeholder.jpg" data-src="images/foggy.jpg" alt="Fog over a mountain">
-                </picture>
-                <figcaption>Fog over a mountain.</figcaption>
-            </figure>
-            <figure>
-                <picture>
-                    <img src="images/placeholder.jpg" data-src="images/storm-field.jpg" alt="Storm over a grassy field">
-                </picture>
-                <figcaption>Storm in the distance of a grassy field.</figcaption>
-            </figure>
-            <figure>
-                <picture>
-                    <img src="images/placeholder.jpg" data-src="images/snow-sun.jpg" alt="Sun creeping through the trees">
-                </picture>
-                <figcaption>Sun creeping through the trees.</figcaption>
-            </figure>
-            <figure>
-                <picture>
-                    <img src="images/placeholder.jpg" data-src="images/lightning.jpg" alt="Lightning">
-                </picture>
-                <figcaption>Lightning in the night sky.</figcaption>
-            </figure>
-            <figure>
-                <picture>
-                    <img src="images/placeholder.jpg" data-src="images/storm-mountain.jpg" alt="Storm over a mountain">
-                </picture>
-                <figcaption>A storm rolling in.</figcaption>
-            </figure>
-            <figure>
-                <picture>
-                    <img src="images/placeholder.jpg" data-src="images/cloudy.jpg" alt="Cloudy day">
-                </picture>
-                <figcaption>Sun rays on a cloudy day.</figcaption>
-            </figure>
-            <figure>
-                <picture>
-                    <img src="images/placeholder.jpg" data-src="images/autumn-trees.jpg" alt="Autumn trees">
-                </picture>
-                <figcaption>Autumn weather.</figcaption>
-            </figure>
-            <figure>
-                <picture>
-                    <img src="images/placeholder.jpg" data-src="images/moon.jpg" alt="Crescent Moon">
-                </picture>
-                <figcaption>Crescent Moon.</figcaption>
-            </figure>
-            <figure>
-                <picture>
-                    <img src="images/placeholder.jpg" data-src="images/snowy-tree.jpg" alt="Tree in the middle of a snowy field">
-                </picture>
-                <figcaption>Field of snow.</figcaption>
-            </figure>
-
-        </div>
+        <h2>Storm Center</h2>
+        <form action="thanks.html" name="w-form" id="w-form">
+            <fieldset>
+                <legend><span>Personal Information</span></legend>
+                <label><span>Full Name:</span><input name="fullname" type="text" value="" pattern="[a-zA-Z -._]{5,99}" placeholder="Full Name" required></label>
+                <label><span>Email:</span><input name="email" type="email" value="" placeholder="email@gmail.com"></label>
+                <label><span>Phone Number:</span><input name="phone" type="tel" value="" placeholder="1235551234" pattern="[0-9]{10,20}" required></label>
+                <label><span>Zip Code:</span><input name="zipcode" type="number" value="" placeholder="85004" required></label>
+            </fieldset>
+            <fieldset>
+                <legend><span>Storm Information</span></legend>
+                <label><span>Storm Date:</span><input name="date" type="date" value=""></label>
+                <label><span>Storm Type:</span><input name="type" list="types" value=""></label>
+                    <datalist id="types">
+                        <option value="Flash Flood"></option>
+                        <option value="Hail"></option>
+                        <option value="Hurricane"></option>
+                        <option value="Thunderstorm"></option>
+                        <option value="Tornado"></option>
+                        <option value="Earthquake"></option>
+                    </datalist>                
+                <label><span>Storm Severity: (1 - 10)</span><input name="severity" type="range" id="rating" value="5" min="1" max="10" step="1"  oninput="adjustRating(this.value)" onchange="adjustRating(this.value)" ><span id="ratingvalue">5</span></label>
+                <label><span>Storm Region:</span></label>
+                    <select name="regions">
+                        <option value="select" selected disabled>Select Region</option>
+                        <option value="franklin">Franklin</option>
+                        <option value="greenville">Greenville</option>
+                        <option value="springfield">Springfield</option>
+                    </select>                
+                <label><span>User in Danger Level:</span></label>
+                    <div class="radio">
+                        <input type="radio" name="danger" value="yes">Yes<br>
+                        <input type="radio" name="danger" value="maybe">Maybe<br>
+                        <input type="radio" name="danger" value="no">No
+                    </div>
+                <label><span>Additional Information or Comments:</span><textarea name="message" rows="10" cols="30"></textarea></label>
+            </fieldset>
+            <input type="submit" value="Submit" class="submitBtn">
+        </form>
+        <section class="contact">
+            <div class="map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d47365.773853438026!2d-111.91534443111685!3d42.09974162639047!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8754f78c7cda6c31%3A0xf1b3b4fc465a4a3f!2sPreston%2C%20ID%2083263!5e0!3m2!1sen!2sus!4v1612639741382!5m2!1sen!2sus"
+                    width="600" height="200" style="border:0;" allowfullscreen=""
+                    aria-hidden="false" tabindex="0"></iframe>
+            </div>
+            <div class="contact-info">
+                <h3>Contact Information</h3>
+                <p>🎯 46 N Main St. Preston, ID. 83263</p>
+                <p>☎️ 208-555-5555</p>
+                <p>📧 weather@checkweather.com</p>
+                <a href="https://www.facebook.com/"><img src="images/facebook.png" alt="Facebook logo"></a>
+                <a href="https://twitter.com/"><img src="images/twitter.png" alt="Twitter logo"></a>
+                <a href="https://www.instagram.com/"><img src="images/instagram.png" alt="Instagram logo"></a>
+            </div>
+        </section>
     </main>
     <footer>
         <p>&copy; Check on Weather | Sterling J. Welker
