@@ -35,45 +35,8 @@
         </nav>
     </header>
     <main>
-        <h2>Storm Center</h2>
-        <form action="thanks.html" name="w-form" id="w-form">
-            <fieldset>
-                <legend><span>Personal Information</span></legend>
-                <label><span>Full Name:</span><input name="fullname" type="text" value="" pattern="[a-zA-Z -._]{5,99}" placeholder="Full Name" required></label>
-                <label><span>Email:</span><input name="email" type="email" value="" placeholder="email@gmail.com"></label>
-                <label><span>Phone Number:</span><input name="phone" type="tel" value="" placeholder="1235551234" pattern="[0-9]{10,20}" required></label>
-                <label><span>Zip Code:</span><input name="zipcode" type="number" value="" placeholder="85004" required></label>
-            </fieldset>
-            <fieldset>
-                <legend><span>Storm Information</span></legend>
-                <label><span>Storm Date:</span><input name="date" type="date" value=""></label>
-                <label><span>Storm Type:</span><input name="type" list="types" value=""></label>
-                    <datalist id="types">
-                        <option value="Flash Flood"></option>
-                        <option value="Hail"></option>
-                        <option value="Hurricane"></option>
-                        <option value="Thunderstorm"></option>
-                        <option value="Tornado"></option>
-                        <option value="Earthquake"></option>
-                    </datalist>                
-                <label><span>Storm Severity: (1 - 10)</span><input name="severity" type="range" id="rating" value="5" min="1" max="10" step="1"  oninput="adjustRating(this.value)" onchange="adjustRating(this.value)" ><span id="ratingvalue">5</span></label>
-                <label><span>Storm Region:</span></label>
-                    <select name="regions">
-                        <option value="select" selected disabled>Select Region</option>
-                        <option value="franklin">Franklin</option>
-                        <option value="greenville">Greenville</option>
-                        <option value="springfield">Springfield</option>
-                    </select>                
-                <label><span>User in Danger Level:</span></label>
-                    <div class="radio">
-                        <input type="radio" name="danger" value="yes">Yes<br>
-                        <input type="radio" name="danger" value="maybe">Maybe<br>
-                        <input type="radio" name="danger" value="no">No
-                    </div>
-                <label><span>Additional Information or Comments:</span><textarea name="message" rows="10" cols="30"></textarea></label>
-            </fieldset>
-            <input type="submit" value="Submit" class="submitBtn">
-        </form>
+        <h3>Thank you for filling out this form!</h3>
+        <p>We appreciate your help as we strive to keep our visitors up to date.</p>
         <section class="contact">
             <div class="map">
                 <iframe
