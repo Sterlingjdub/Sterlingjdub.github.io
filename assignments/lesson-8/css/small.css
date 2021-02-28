@@ -316,12 +316,9 @@ input.submitBtn {
 
 /* Thanks */
 
-main.thanks {
-    background-color: blanchedalmond;
-    border-radius: .8em;
-    margin: 8em 1em 8em 1em;
-    border: #917a56 solid 1px;
-    text-align: center;
+.thanks {
+    padding: 30px;
+    margin-bottom: 5em;
 }
 
 .clearfix:after {
