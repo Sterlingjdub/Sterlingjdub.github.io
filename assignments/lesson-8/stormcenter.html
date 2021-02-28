@@ -42,7 +42,7 @@
                     <legend><span>Personal Information</span></legend>
                     <label class="personal-info"><span>Full Name: *</span><input name="fullname" type="text" value="" pattern="[a-zA-Z -._]{5,99}" placeholder="Full Name" required></label>
                     <label class="personal-info"><span>Email:</span><input name="email" type="email" value="" placeholder="youremail@email.com"></label>
-                    <label><span>Phone Number: *</span><input name="phone" type="tel" value="" placeholder="2085551234" pattern="[0-9]{10,20}" required></label>
+                    <label><span>Phone Number: *</span><input name="phone" type="tel" value="" placeholder="2085551234" pattern="[0-9]{10}" required></label>
                     <label><span>Zip Code: *</span><input name="zipcode" type="number" value="" placeholder="xxxxx" required></label>
                 </fieldset>
                 <fieldset>
@@ -67,9 +67,9 @@
                         </select>                
                     <label><span>User in Danger Level:</span></label>
                         <div class="radio">
-                            <input type="radio" name="danger" value="yes">Yes<br>
-                            <input type="radio" name="danger" value="maybe">Maybe<br>
-                            <input type="radio" name="danger" value="no">No
+                            <input type="radio" name="danger" value="yes"> Yes<br>
+                            <input type="radio" name="danger" value="maybe"> Maybe<br>
+                            <input type="radio" name="danger" value="no"> No
                         </div>
                     <label><span>Additional Information or Comments:</span><textarea name="message" rows="10" cols="30"></textarea></label>
                 </fieldset>
