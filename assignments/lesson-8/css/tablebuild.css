@@ -1,8 +1,9 @@
-main{
+main {
     display: flex;
     justify-content: center;
     font-family: "Ubuntu", sans-serif;
     text-align: center;
+    margin-top: 15em;
 }
 
 div {
@@ -10,16 +11,16 @@ div {
     box-shadow: 10px 10px 10px #628ca6;
 }
 
-table{
+table {
     border-collapse: collapse;
 }
 
-table td, th{
+table td, th {
     padding:8px;
     border: 1px solid gray;
 }
 
-caption{
+caption {
     background-color:#7fb9c2; 
     font-size: 24px; 
     padding: 10px;
