@@ -263,7 +263,7 @@ fieldset {
 }
 legend {
     color: #000;
-    margin-left: 6%;
+    margin-left: 8%;
     padding: .5em;
     border: 1px solid black;
     background-color: skyblue;
@@ -274,9 +274,20 @@ legend {
 
 label {
     display: block;
-    margin: .5em;
+    font-size: 16px;
+    color: #000;
+    padding-top: 1em;
+    font-weight: bold;
 }
- 
+label, select, .radio {
+    margin-left: 6%;
+}
+.severity {
+	display: flex;
+}
+#ratingvalue {
+    margin-left: 10px;
+}
 label span {
     display: block;
     font-size: 16px;
@@ -288,7 +299,6 @@ label span {
 .personal-info input {
     width: 90%;
 }
-
 input.submitBtn {
     color: black;
     border: solid 1px #111;
