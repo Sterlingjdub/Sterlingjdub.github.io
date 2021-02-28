@@ -252,6 +252,65 @@ figure img {
 img[data-src] {
     filter: blur(5px);
 }
+
+/* Storm Center */
+form#conference {
+    margin: 1em 3%;
+}
+fieldset {
+    background-color: blanchedalmond;
+    border-radius: .8em;
+    margin: 1.5em 1em 1em 1em;
+    border: #917a56 solid 1px;
+}
+legend {
+    color: #000;
+    margin-left: 6%;
+    padding: .5em;
+    border: #917a56 solid 1px;
+    background-color: #f2eee7;
+    border-radius: .4em;
+}
+
+label {
+    display: block;
+    margin: .5em;
+}
+ 
+label span {
+    display: block;
+    font-size: 18px;
+    font-family: 'Ubuntu', serif;
+    text-decoration: underline;
+    color: #000;
+    padding-top: .9em;
+    padding-bottom: .1em;
+}
+
+
+
+input.submitBtn {
+    color: #fff;
+    border: solid 1px #111;
+    border-radius: 7px;
+    width: 25%;
+    margin: .5em 0 1em 1em;
+    font-size: 1em;
+    padding: .6em;
+    background: #00be;
+    box-shadow: 4px 4px 10px #666;
+}
+
+/* Thanks */
+
+main.thanks {
+    background-color: blanchedalmond;
+    border-radius: .8em;
+    margin: 8em 1em 8em 1em;
+    border: #917a56 solid 1px;
+    text-align: center;
+}
+
 .clearfix:after {
     content: " "; /* Older browser do not support empty content */
     visibility: hidden;
