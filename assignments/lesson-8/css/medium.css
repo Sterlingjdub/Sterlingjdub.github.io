@@ -79,4 +79,9 @@
     .regions {
         width: 40%;
     }
+
+    /* Home Page */
+    .home-grid {
+        grid-template-columns: 1fr 1fr;
+    }
 }

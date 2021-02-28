@@ -102,6 +102,10 @@
         width: 50%;
     }
 
+    /* Home Page */
+    .home-grid {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
     .regions {
         width: 20%;
     }
