@@ -321,6 +321,17 @@ input.submitBtn {
     margin-bottom: 5em;
 }
 
+/* Home Page */
+.home-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+}
+
+.home-grid img {
+    max-width: 85%;
+    margin: 20px;
+}
 .clearfix:after {
     content: " "; /* Older browser do not support empty content */
     visibility: hidden;

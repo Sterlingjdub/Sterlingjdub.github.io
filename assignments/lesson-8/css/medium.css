@@ -84,4 +84,22 @@
     .home-grid {
         grid-template-columns: 1fr 1fr;
     }
+
+    .home-fish-haven {
+        grid-column: 1/3;
+        grid-row: 1/2;
+    }
+
+    .home-preston {
+        grid-column: 1/3;
+        grid-row: 2/3;
+    }
+
+    .home-soda-springs {
+        grid-column: 1/3;
+        grid-row: 3/4;
+    }
+    .home-grid img {
+        max-width: 100%;
+    }
 }

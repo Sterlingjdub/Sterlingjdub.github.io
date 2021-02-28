@@ -101,12 +101,24 @@
     .personal-info input {
         width: 50%;
     }
-
+    .regions {
+        width: 20%;
+    }
+    
     /* Home Page */
     .home-grid {
         grid-template-columns: 1fr 1fr 1fr;
     }
-    .regions {
-        width: 20%;
+
+    .home-fish-haven {
+        grid-column: 1/2;
+    }
+
+    .home-preston {
+        grid-column: 2/3;
+    }
+
+    .home-soda-springs {
+        grid-column: 3/4;
     }
 }

@@ -320,12 +320,6 @@ input.submitBtn {
     padding: 30px;
     margin-bottom: 5em;
 }
-
-/* Home Page */
-.home-grid {
-    display: grid;
-    grid-template-columns: 1fr;
-}
 .clearfix:after {
     content: " "; /* Older browser do not support empty content */
     visibility: hidden;
