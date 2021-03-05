@@ -4,7 +4,7 @@ h1 {
     border: 1px solid black;
     margin: auto;
     padding: 20px;
-    background-color: yellow;
+    background-color: skyblue;
 }
 
 .cards {
@@ -13,7 +13,7 @@ h1 {
     justify-items: center;
     gap: 10px;
     padding-top: 20px;
-    background-color: silver;
+    background-color: snow;
 }
 
 section {
@@ -27,6 +27,7 @@ section {
 
 img {
     max-width: 90%;
+    margin: 10px;
 }
 
 
