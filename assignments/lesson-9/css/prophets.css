@@ -1,0 +1,46 @@
+h1 {
+    text-align: center;
+    font-family: 'Montserrat', Helvetica, sans-serif;
+    border: 1px solid black;
+    margin: auto;
+    padding: 20px;
+    background-color: yellow;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    gap: 10px;
+    padding-top: 20px;
+    background-color: silver;
+}
+
+section {
+    border: 1px solid black;
+    text-align: center;
+    font-family: "Roboto", "Times New Roman", serif;
+    background-color: white;
+    width: 90%;
+    box-shadow: 0 0 30px rgb(97, 96, 96);
+}
+
+img {
+    max-width: 90%;
+}
+
+
+/* Medium */
+@media only screen and (min-width: 37.5em) {
+    .cards {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/* Large */
+@media only screen and (min-width: 60em) {
+    .cards {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+}
