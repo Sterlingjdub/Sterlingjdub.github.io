@@ -93,7 +93,6 @@
     }
     .home-grid img {
         grid-column: 2/3;
-        max-width: 20%;
     }
 
  
