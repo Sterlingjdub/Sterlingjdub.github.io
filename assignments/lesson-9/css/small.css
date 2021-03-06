@@ -328,9 +328,19 @@ input.submitBtn {
     justify-content: center;
 }
 
+.home-grid p {
+    font-size: 18px;
+}
+
 .home-grid img {
     max-width: 85%;
     margin: 20px;
+}
+
+.town-motto {
+    font-size: 18px;
+    font-style: italic;
+    font-weight: normal;
 }
 .clearfix:after {
     content: " "; /* Older browser do not support empty content */
