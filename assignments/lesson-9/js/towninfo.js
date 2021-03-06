@@ -1,18 +1,43 @@
-var weatherObject = new XMLHttpRequest();
+const requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
 
-weatherObject.open('GET', 'http://api.wunderground.com/api/4c9a62e07d2a34c1/conditions/forecast/q/MN/Franklin.json', true);
+fetch(requestURL)
+    .then(function (response) {
+        return response.json();
+    })
+    .then(function (jsonObject) {
+        //console.table(jsonObject);  // temporary checking for valid response and data parsing
+        const towns = jsonObject['towns'];
 
-weatherObject.send();
+ 
+        for (let i = 0; i < towns.length; i++) {
+            if (towns[i].name == "Preston" || towns[i].name == "Fish Haven" || towns[i].name == "Soda Springs") {
+                let card = document.createElement('townbox');
+                let photo = document.createElement('img');
+                let name = document.createElement('h1');
+                let motto = document.createElement('h2');
+                let yearFounded = document.createElement('h3');
+                let currentPopulation = document.createElement('h4');
+                let averageRainfall = document.createElement('h5');
+                
 
-weatherObject.onload = function() {
-    
-    var weatherInfo = JSON.parse(weatherObject.responseText);
-    console.log(weatherInfo);
-    
-    document.getElementById('current').innerHTML = weatherInfo.current_observation.weather;
-    document.getElementById('c-temp').innerHTML = weatherInfo.current_observation.temp_f;
-    document.getElementById('wind').innerHTML = weatherInfo.current_observation.wind_gust_mph;
-    document.getElementById('feelsLike').innerHTML = weatherInfo.current_observation.windchill_f;
-    document.getElementById('img-current').src = weatherInfo.current_observation.icon_url;
-    document.getElementById('c-forecast').innerHTML = weatherInfo.forcast.txt_forcast.forecastday["0"].fcttext;
-}
+       
+                photo.setAttribute('src', 'images/' + towns[i].photo);
+                photo.setAttribute('alt', towns[i].name);
+                name.textContent = towns[i].name;
+                motto.textContent = towns[i].motto;
+                yearFounded.textContent = 'Year founded: ' + towns[i].yearFounded;
+                currentPopulation.textContent = "Population: " + towns[i].currentPopulation;
+                averageRainfall.textContent = 'Annual Rain Fall: ' + towns[i].averageRainfall;
+               
+              
+               
+                card.appendChild(photo);
+                card.appendChild(name);
+                card.appendChild(motto);
+                card.appendChild(yearFounded);
+                card.appendChild(currentPopulation);
+                card.appendChild(averageRainfall);
+                document.querySelector('div.cards').appendChild(card);
+            }
+        }
+    });
