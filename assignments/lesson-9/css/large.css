@@ -110,15 +110,4 @@
         grid-template-columns: 1fr 1fr 1fr;
     }
 
-    .home-fish-haven {
-        grid-column: 1/2;
-    }
-
-    .home-preston {
-        grid-column: 2/3;
-    }
-
-    .home-soda-springs {
-        grid-column: 3/4;
-    }
 }
