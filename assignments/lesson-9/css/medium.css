@@ -91,7 +91,7 @@
     .town-name {
         grid-column: 1/2;
     }
-    .town-info {
+    .home-grid p {
         grid-column: 1/2;
     }
     .home-grid img {
