@@ -33,10 +33,10 @@ fetch(requestURL)
         
                 card.appendChild(h2);
                 card.appendChild(p);
-                p.appendChild(motto)
-                p.appendChild(year);
-                p.appendChild(population);
-                p.appendChild(rainfall);
+                card.appendChild(motto)
+                card.appendChild(year);
+                card.appendChild(population);
+                card.appendChild(rainfall);
                 card.appendChild(image);
 
 
