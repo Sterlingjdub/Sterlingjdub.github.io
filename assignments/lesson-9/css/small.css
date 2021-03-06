@@ -325,7 +325,6 @@ input.submitBtn {
 .home-grid {
     display: grid;
     grid-template-columns: 1fr;
-    justify-content: center;
 }
 
 .home-grid p {
