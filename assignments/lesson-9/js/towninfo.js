@@ -10,34 +10,38 @@ fetch(requestURL)
 
  
         for (let i = 0; i < towns.length; i++) {
-            if (towns[i].name == "Preston" || towns[i].name == "Fish Haven" || towns[i].name == "Soda Springs") {
-                let card = document.createElement('townbox');
-                let photo = document.createElement('img');
-                let name = document.createElement('h1');
-                let motto = document.createElement('h2');
-                let yearFounded = document.createElement('h3');
-                let currentPopulation = document.createElement('h4');
-                let averageRainfall = document.createElement('h5');
+            if (towns[i].name == "Fish Haven" || towns[i].name == "Preston" || towns[i].name == "Soda Springs") {
+                let card = document.createElement('section');
+                let h2 = document.createElement('h2');
+
+                let p = document.createElement('p');
+                let motto = document.createElement('h3');
+                let year = document.createElement('p');
+                let population = document.createElement('p');
+                let rainfall = document.createElement('p');
+                let image = document.createElement('img');
                 
 
-       
-                photo.setAttribute('src', 'images/' + towns[i].photo);
-                photo.setAttribute('alt', towns[i].name);
-                name.textContent = towns[i].name;
+                h2.textContent = towns[i].name;
                 motto.textContent = towns[i].motto;
-                yearFounded.textContent = 'Year founded: ' + towns[i].yearFounded;
-                currentPopulation.textContent = "Population: " + towns[i].currentPopulation;
-                averageRainfall.textContent = 'Annual Rain Fall: ' + towns[i].averageRainfall;
-               
-              
-               
-                card.appendChild(photo);
-                card.appendChild(name);
-                card.appendChild(motto);
-                card.appendChild(yearFounded);
-                card.appendChild(currentPopulation);
-                card.appendChild(averageRainfall);
-                document.querySelector('div.cards').appendChild(card);
+                year.textContent = "Year Founded: " + towns[i].yearFounded;
+                population.textContent = "Population: " + towns[i].currentPopulation
+                rainfall.textContent = "Annual Rain Fall: " + towns[i].averageRainfall
+                image.setAttribute('src', towns[i].photo);
+                image.setAttribute('alt', towns[i].name);
+        
+                card.appendChild(h2);
+                card.appendChild(p);
+                p.appendChild(motto)
+                p.appendChild(year);
+                p.appendChild(population);
+                p.appendChild(rainfall);
+                card.appendChild(image);
+
+
+
+
+                document.querySelector('div.home-grid').appendChild(card);
             }
         }
     });
