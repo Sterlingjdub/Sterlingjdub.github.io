@@ -24,10 +24,11 @@ fetch(requestURL)
 
                 h2.textContent = towns[i].name;
                 motto.textContent = towns[i].motto;
-                year.textContent = "Year Founded: " + towns[i].yearFounded;
-                population.textContent = "Population: " + towns[i].currentPopulation
-                rainfall.textContent = "Annual Rain Fall: " + towns[i].averageRainfall
-                image.setAttribute('src', towns[i].photo);
+                motto.setAttribute('class', 'town-motto')
+                year.textContent = 'Year Founded: ' + towns[i].yearFounded;
+                population.textContent = 'Population: ' + towns[i].currentPopulation
+                rainfall.textContent = 'Annual Rain Fall: ' + towns[i].averageRainfall
+                image.setAttribute('src', "images/" + towns[i].photo);
                 image.setAttribute('alt', towns[i].name);
         
                 card.appendChild(h2);
@@ -37,8 +38,6 @@ fetch(requestURL)
                 p.appendChild(population);
                 p.appendChild(rainfall);
                 card.appendChild(image);
-
-
 
 
                 document.querySelector('div.home-grid').appendChild(card);
