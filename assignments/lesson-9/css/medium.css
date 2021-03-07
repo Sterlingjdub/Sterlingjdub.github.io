@@ -95,4 +95,8 @@
     .home-grid img {
         grid-column: 2/3;
     }
+    .home-img {
+        float: right;
+        width: 40%;
+    }
 }

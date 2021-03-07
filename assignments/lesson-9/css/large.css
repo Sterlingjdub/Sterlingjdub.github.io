@@ -75,7 +75,7 @@
     }
     
     .article-img {
-        width: 100%;
+        width: 90%;
     }
     .contact {
         display: flex;
@@ -119,6 +119,11 @@
     }
     .home-grid section:nth-child(3) {
         grid-column: 3/4;
+    }
+
+    .home-img {
+        margin: 0 20px 20px 20px;
+        width: 50%;
     }
 
 }
