@@ -334,6 +334,7 @@ input.submitBtn {
 .home-grid img {
     max-width: 85%;
     margin: 20px;
+    box-shadow: 5px 5px 5px #000;
 }
 
 .town-motto {
