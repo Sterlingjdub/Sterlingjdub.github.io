@@ -8,7 +8,11 @@ fetch(apiURL)
         const imagesrc = 'https://openweathermap.org/img/w/' + jsObject.weather[0].icon + '.png';  
         const desc = jsObject.weather[0].description;  
 
-        document.getElementById("current-temp").textContent = jsObject.main.temp;
+        document.getElementById('current-temp').textContent = Math.round(jsObject.main.temp);
+        document.getElementById('high').textContent = Math.round(jsObject.main.temp_max);
+        document.getElementById('low').textContent = Math.round(jsObject.main.temp_min);
+        document.getElementById('humidity').textContent = Math.round(jsObject.main.humidity);
+        document.getElementById('wind').textContent = Math.round(jsObject.wind.speed);
         document.getElementById('imagesrc').textContent = imagesrc;  
         document.getElementById('icon').setAttribute('src', imagesrc);  
         document.getElementById('icon').setAttribute('alt', desc);
