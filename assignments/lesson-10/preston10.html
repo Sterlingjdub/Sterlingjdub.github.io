@@ -48,12 +48,13 @@
             <ul class="weather-summary">
                 <li class="wSum"><b>Weather Summary:</b></li>
                 <li><b>Currently:</b> <i>Partly Cloudy</i></li>
-                <li><b>High:</b> <i>38&#176;F</i></li>
-                <li><b>Low:</b> <i>20&#176;F</i></li>
+                <li><b>High:</b> <i><span id="high">38</span>&#176;F</i></li>
+                <li><b>Low:</b> <i><span id="low">20</span>&#176;F</i></li>
                 <li><b>Humidty:</b> <i>10%</i></li>
-                <li><b>Wind Speed:</b> <i>3mph</i></li>
+                <li><b>Wind Speed:</b> <i><span id="wind">8</span>mph</i></li>
+                <li><b>Wind Chill:</b> <i><span id="windChill"></span></i></li>
             </ul>
-
+ 
         </div>
         <div class="grid-container">
             <h2>Preston, Idaho</h2>
@@ -61,10 +62,11 @@
                 <h4 class="wSum"><b>Weather Summary:</b></h4>
                 <ul>
                     <li><b>Currently:</b> <i>Partly Cloudy</i></li>
-                    <li><b>High:</b> <i>38&#176;F</i></li>
-                    <li><b>Low:</b> <i>20&#176;F</i></li>
+                    <li><b>High:</b> <i><span id="high">38</span>&#176;F</i></li>
+                    <li><b>Low:</b> <i><span id="low">20</span>&#176;F</i></li>
                     <li><b>Humidty:</b> <i>10%</i></li>
-                    <li><b>Wind Speed:</b> <i>3mph</i></li>
+                    <li><b>Wind Speed:</b> <i><span id="wind">8</span>mph</i></li>
+                    <li><b>Wind Chill:</b> <i><span id="windChill"></span></i></li>
                 </ul>
             </section>
             <section>
@@ -153,9 +155,12 @@
             <span id="currentDate"></span>
         </div>
     </footer>
-    <script src="js/pancakes.js"></script>    
     <script src="js/currentDate.js"></script>
+    <script src="js/pancakes.js"></script>
     <script src="js/hamburger.js"></script>
+    <script src="js/windchill.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="js/webfontload.js"></script>
 </body>
 
 </html>
