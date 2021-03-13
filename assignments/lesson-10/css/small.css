@@ -1,0 +1,357 @@
+body {
+    background-color: #F3F6F7;
+    font-size: 16px; 
+    line-height: 30px;
+    font-family: "Roboto", "Times New Roman", serif;
+    text-align: center;
+}
+
+nav button {
+    display: block;
+    cursor: pointer;
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    font-family: "Bebas Neue", "Arial Black", sans-serif;
+    margin: auto;
+    padding: 1rem;
+    font-size: 1.2em;
+    letter-spacing: 1px;
+    color: #FFA400;
+    overflow: hidden;
+}
+  
+nav ul {
+    font-family: "Bebas Neue", "Arial Black", sans-serif;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-size: 1.2em;
+    letter-spacing: 1px;
+    overflow: hidden;
+}
+    
+nav ul li a {
+    display: block;
+    color: #FFA400;
+    text-align: center;
+    padding: 0.75rem;
+    text-decoration: none;
+    font-size: 0.95em;
+    border-top: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+nav ul.hide {
+    display: none;
+}
+
+nav button:hover {
+    background-color: #86A5AE;
+    color: #080B0C;
+}
+
+nav a:hover {
+    background-color: #86A5AE;
+    color: #080B0C;
+}
+
+nav .active {
+    background-color: #F3F6F7;
+    color: #11376A;
+}
+
+
+  
+header {
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    background: #11376A;
+}
+  
+.weather-logo {
+    margin: 0.5em;
+    padding: 0.2em;
+    max-width: 50px;
+
+}
+
+.logo-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 10px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.hero-img img {
+    max-width: 100%;
+}
+h1 {
+    font-size: 2em;
+    font-family: "Bebas Neue", "Arial Black", sans-serif;
+    text-align: center;
+    color: #F3F6F7;
+    margin-bottom: 0;
+}
+  
+h2 {
+    font-family: "Bebas Neue", "Arial Black", sans-serif;
+    color: #080B0C;
+    text-align: center;
+    max-width: 50%;
+    font-size: 1.5em;
+    border-bottom: 1px solid #080B0C;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h3 {
+    font-family: "Bebas Neue", "Arial Black", sans-serif;
+    letter-spacing: 1px;
+    font-size: 18px;
+}
+.slogan {
+    font-size: .8em;
+    margin-bottom: 0;
+    font-family: "Roboto", "Times New Roman", serif;
+    text-align: center;
+    color: #F3F6F7;
+}
+#banner {
+    display: block;
+    background-color: #FFA400;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: -10px;
+}
+.banner-img {
+    display: none;
+    grid-column: 1/2;
+}
+.banner-img-sm {
+    grid-column: 1/2;
+    width: 100%;
+}
+
+p {
+    font-size: 14px;
+    margin: 10px;
+}
+  
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1em;
+    margin-top: 10px;;
+}
+  
+main section {
+    border: 1px solid #11376A;
+    border-radius: 5px;
+    margin: 20px;
+    background-color: #EAECEC;
+}
+.weather-summary {
+    display: none;
+}
+li {
+    list-style-type: none;
+}
+.weather-summary-sm {
+    padding: 18px;
+    text-align: justify;
+    background-color: rgba(240, 240, 240, 0.8);
+    border: none;
+}
+.wSum {
+    font-family: "Bebas Neue", "Arial Black", sans-serif;
+    font-size: 20px;
+    letter-spacing: 1px;
+    margin-left: 2em;
+}
+
+
+.forcast {
+    grid-column: 1/2;
+}
+td {
+    font-size: 14px;
+}
+
+th img {
+    max-width: 50px;
+}
+table {
+    width: 100%;
+    margin: 10px auto;
+}
+.article-info {
+    grid-column: 1/2;
+    overflow: auto;
+}
+.article-img {
+    margin: 20px;
+    box-shadow: 5px 5px 5px #000;
+    max-width: 50%;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column-reverse;
+    border-radius: 0;
+    margin: 0;
+}
+iframe {
+    margin-bottom: -10px;
+    padding: 0;
+    width: 100%;
+}
+.contact-info {
+    margin: auto;
+}
+.contact img {
+    width: 24px;
+    margin: 20px;
+}
+
+.contact-info p {
+    text-align: left;
+    margin: 20px;
+}
+  
+footer {
+    background-color: #11376A;
+    font-family: "Roboto", "Times New Roman", serif;
+    font-size: smaller;
+    text-align: center;
+    color: #F3F6F7;
+    padding: 15px 5px 15px;
+    max-width: 100%;
+    margin: 0;
+}
+footer p {
+    color: #F3F6F7;
+}
+
+/* Gallery Page */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    justify-content: center;
+}
+
+figure img {
+    filter: blur(0em);
+    transition: filter 0.5s;
+    margin: 10px;	
+    width: 90%;
+}
+
+img[data-src] {
+    filter: blur(5px);
+}
+
+/* Storm Center */
+fieldset {
+    background-color: #EAECEC;
+    border-radius: 5px;
+    margin: 2em;
+    border: 1px solid black;
+    text-align: left;
+}
+legend {
+    color: #000;
+    margin-left: 8%;
+    padding: .5em;
+    border: 1px solid black;
+    background-color: skyblue;
+    border-radius: 5px;
+    font-weight: bolder;
+    font-size: 19px;
+}
+
+label {
+    display: block;
+    font-size: 16px;
+    color: #000;
+    padding-top: 1em;
+    font-weight: bold;
+}
+label, select, .radio {
+    margin-left: 6%;
+}
+.severity {
+	display: flex;
+}
+#ratingvalue {
+    margin-left: 10px;
+}
+.regions {
+    width: 50%;
+}
+label span {
+    display: block;
+    font-size: 16px;
+    color: #000;
+    padding-top: 1em;
+    font-weight: bold;
+}
+
+.personal-info input {
+    width: 90%;
+}
+input.submitBtn {
+    color: black;
+    border: solid 1px #111;
+    border-radius: 5px;
+    width: 25%;
+    margin: .5em 0 1em 1em;
+    font-size: 1em;
+    padding: .6em;
+    background: #FFA400;
+    box-shadow: 4px 4px 10px #666;
+}
+
+/* Thanks */
+
+.thanks {
+    padding: 30px;
+    margin-bottom: 5em;
+}
+
+/* Home Page */
+.home-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.home-grid p {
+    font-size: 18px;
+}
+
+.home-grid img {
+    max-width: 85%;
+    margin: 20px;
+    box-shadow: 5px 5px 5px #000;
+}
+
+.town-motto {
+    font-size: 18px;
+    font-style: italic;
+    font-weight: normal;
+}
+
+.home-img {
+    margin: 20px;
+    box-shadow: 5px 5px 5px #000;
+    width: 50%;
+}
+.clearfix:after {
+    content: " "; /* Older browser do not support empty content */
+    visibility: hidden;
+    display: block;
+    height: 0;
+    clear: both;
+ }
