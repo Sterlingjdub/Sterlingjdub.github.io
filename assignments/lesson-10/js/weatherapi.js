@@ -27,6 +27,7 @@ fetch(apiURL)
 
   });
 
+// This is for the 5-day forcast
 fetch(forecastURL)
     .then((response) => response.json())
     .then((jsObject) => {
@@ -34,24 +35,25 @@ fetch(forecastURL)
         let count = 0;
         const dayOfWeek = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
         
+        // This will loop through 5 times
         for (let i = 0; count < 5; i++) {
-          let obj = jsObject.list[i];
-          if (obj.dt_txt.includes("18:00:00")) {
+          let forecast = jsObject.list[i];
+
+          if (forecast.dt_txt.includes("18:00:00")) {
             count++;
         
-            //Calculate day of week
-            let date = new Date(obj.dt_txt);
+            let date = new Date(forecast.dt_txt);
             let day = date.getDay();
         
 
-            let imagesrc = `https://openweathermap.org/img/w/${obj.weather[0].icon}.png`;
-            let desc = obj.weather[0].description;
+            const imagesrc = 'https://openweathermap.org/img/w/' + forecast.weather[0].icon + '.png';
+            const desc = forecast.weather[0].description;
         
-            document.getElementById(`day${count}`).textContent = dayOfWeek[day];
-            document.getElementById(`tempH${count}`).textContent = Math.round(obj.main.temp);
-            document.getElementById(`tempL${count}`).textContent = Math.round(obj.main.temp_min);
-            document.getElementById(`img${count}`).setAttribute('src', imagesrc);
-            document.getElementById(`img${count}`).setAttribute('alt', desc);
+            document.getElementById(`day` + count).textContent = dayOfWeek[day];
+            document.getElementById(`tempH` + count).textContent = forecast.main.temp_max;
+            document.getElementById(`tempL` + count).textContent = forecast.main.temp_min;
+            document.getElementById(`icon` + count).setAttribute('src', imagesrc);
+            document.getElementById(`icon` + count).setAttribute('alt', desc);
           }
         }
 
