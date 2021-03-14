@@ -25,6 +25,7 @@ fetch(apiURL)
         document.getElementById('wind').textContent = Math.round(jsObject.wind.speed);
         document.getElementById('windChill').innerHTML = windChill;
 
+        // This is for the small view
         document.getElementById('current-tempSM').textContent = Math.round(jsObject.main.temp);
         document.getElementById('highSM').textContent = Math.round(jsObject.main.temp_max);
         document.getElementById('lowSM').textContent = Math.round(jsObject.main.temp_min);
