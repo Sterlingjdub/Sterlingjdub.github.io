@@ -1,10 +1,10 @@
-var d = new Date();
-var days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
-var dayOfTheWeek = days[d.getDay()];
+let d = new Date();
+let days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+let dayOfTheWeek = days[d.getDay()];
 let day = d.getDate();
-var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
-var month = months[d.getMonth()];
-var year = d.getFullYear();
+let months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+let month = months[d.getMonth()];
+let year = d.getFullYear();
 
 document.getElementById("currentDate").innerHTML = dayOfTheWeek + ", " + day + " " + month + " " + year;
 
