@@ -24,35 +24,42 @@ fetch(apiURL)
         document.getElementById('humidity').textContent = Math.round(jsObject.main.humidity);
         document.getElementById('wind').textContent = Math.round(jsObject.wind.speed);
         document.getElementById('windChill').innerHTML = windChill;
+
+        document.getElementById('current-tempSM').textContent = Math.round(jsObject.main.temp);
+        document.getElementById('highSM').textContent = Math.round(jsObject.main.temp_max);
+        document.getElementById('lowSM').textContent = Math.round(jsObject.main.temp_min);
+        document.getElementById('humiditySM').textContent = Math.round(jsObject.main.humidity);
+        document.getElementById('windSM').textContent = Math.round(jsObject.wind.speed);
+        document.getElementById('windChillSM').innerHTML = windChill;
         
 });
+
 // This is for the 5-day forcast
 fetch(forecastURL)
     .then((response) => response.json())
     .then((jsObject) => {
 
-        let count = 0;
-        const dayOfWeek = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+        const daysWeek = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+        let num = 0;
         
         // This will loop through 5 times
-        for (let i = 0; count < 5; i++) {
-          let forecast = jsObject.list[i];
+        for (let i = 0; num < 5; i++) {
+  
 
-          if (forecast.dt_txt.includes("18:00:00")) {
-            count++;
-        
-            let date = new Date(forecast.dt_txt);
-            let day = date.getDay();
-        
+          if (jsObject.list[i].dt_txt.includes("18:00:00")) {
+            num++;
 
-            const imagesrc = 'https://openweathermap.org/img/w/' + forecast.weather[0].icon + '.png';
-            const desc = forecast.weather[0].description;
+            const imagesrc = 'https://openweathermap.org/img/w/' + jsObject.list[i].weather[0].icon + '.png';
+            const desc = jsObject.list[i].weather[0].description;
+            const date = new Date(jsObject.list[i].dt_txt);
+            const day = date.getDay();
         
-            document.getElementById(`day` + count).textContent = dayOfWeek[day];
-            document.getElementById(`tempH` + count).textContent = forecast.main.temp_max;
-            document.getElementById(`tempL` + count).textContent = forecast.main.temp_min;
-            document.getElementById(`icon` + count).setAttribute('src', imagesrc);
-            document.getElementById(`icon` + count).setAttribute('alt', desc);
+            // This will display the 5-day forecast
+            document.getElementById(`day` + num).textContent = daysWeek[day];
+            document.getElementById(`tempH` + num).textContent = Math.round(jsObject.list[i].main.temp_max);
+            document.getElementById(`tempL` + num).textContent = Math.round(jsObject.list[i].main.temp_min);
+            document.getElementById(`icon` + num).setAttribute('src', imagesrc);
+            document.getElementById(`icon` + num).setAttribute('alt', desc);
           }
         }
 
