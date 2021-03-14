@@ -24,9 +24,8 @@ fetch(apiURL)
         document.getElementById('humidity').textContent = Math.round(jsObject.main.humidity);
         document.getElementById('wind').textContent = Math.round(jsObject.wind.speed);
         document.getElementById('windChill').innerHTML = windChill;
-
-  });
-
+        
+});
 // This is for the 5-day forcast
 fetch(forecastURL)
     .then((response) => response.json())
