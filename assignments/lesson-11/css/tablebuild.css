@@ -1,0 +1,49 @@
+main {
+    display: flex;
+    justify-content: center;
+    font-family: "Ubuntu", sans-serif;
+    text-align: center;
+    margin-top: 15em;
+}
+
+div {
+    border: 1px solid gray;
+    box-shadow: 10px 10px 10px #628ca6;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+table td, th {
+    padding:8px;
+    border: 1px solid gray;
+}
+
+caption {
+    background-color:#7fb9c2; 
+    font-size: 24px; 
+    padding: 10px;
+}
+
+th {
+    background-color: #628ca6; 
+    color: white;
+}
+
+tr {
+    background-color:#e7ffed; 
+}
+
+tr:nth-child(odd) {
+    background-color: #e7f0ed;
+}
+
+.November {
+    color: white;
+    background-color:#628ca6;
+}
+			
+tfoot td {
+    background-color:#7fb9c2;
+}

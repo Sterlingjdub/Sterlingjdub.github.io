@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <title>Preston, Idaho | Check on Weather</title>
+    <meta name="description" content="This is the home page for Preston, Idaho.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+</head>
+ 
+<body>
+    <header>
+        <div class="logo-box">
+            <img class="weather-logo" src="images/sun-rain-cloud-emoji.png" alt="Check on Weather website logo" />
+            <section class="headings">
+                <h1>Check on Weather</h1>
+                <p class="slogan"><i>We check the weather, so you don't have to!</i></p>
+            </section>
+        </div>
+        <nav>
+            <button onclick="toggleMenu()">&#9776; Menu</button>
+            <ul id="primaryNav" class="hide">
+                <li><a href="/assignments/lesson-9/index.html">Home</a></li>
+                <li><a href="/assignments/lesson-10/preston10.html">Preston</a></li>
+                <li><a href="#">Soda Springs</a></li>
+                <li><a href="#">Fish Haven</a></li>
+                <li><a  class="active" href="stormcenter.html">Storm Center</a></li>
+                <li><a href="/assignments/lesson-7/gallery-7.html">Gallery</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="grid-container">
+            <h2>Report a Storm</h2>
+            <form action="thanks.html" name="w-form" id="w-form">
+                <fieldset>
+                    <legend><span>Personal Information</span></legend>
+                    <label class="personal-info"><span>Full Name: *</span><input name="fullname" type="text" value="" pattern="[a-zA-Z -._]{5,99}" placeholder="Full Name" required></label>
+                    <label class="personal-info"><span>Email:</span><input name="email" type="email" value="" placeholder="youremail@email.com"></label>
+                    <label><span>Phone Number: *</span><input name="phone" type="tel" value="" placeholder="2085551234" pattern="[0-9]{10}" required></label>
+                    <label><span>Zip Code: *</span><input name="zipcode" type="number" value="" placeholder="xxxxx" required></label>
+                </fieldset>
+                <fieldset>
+                    <legend><span>Storm Information</span></legend>
+                    <label><span>Storm Date:</span><input name="date" type="date" value=""></label>
+                    <label><span>Storm Type:</span><input name="type" list="types" value=""></label>
+                        <datalist id="types">
+                            <option value="Flash Flood"></option>
+                            <option value="Hail"></option>
+                            <option value="Hurricane"></option>
+                            <option value="Thunderstorm"></option>
+                            <option value="Tornado"></option>
+                        </datalist>                
+                    <label class="severity"><span>Storm Severity:</span> <span id="ratingvalue">5</span></label>
+                    <label>1 <input name="severity" type="range" id="rating" value="5" min="1" max="10" step="1"  oninput="adjustRating(this.value)" onchange="adjustRating(this.value)" > 10</label>
+                    <label><span>Storm Region:</span></label>
+                        <select name="regions" class="regions">
+                            <option value="select" selected disabled>Select Region</option>
+                            <option value="preston">Preston</option>
+                            <option value="soda springs">Soda Springs</option>
+                            <option value="fish haven">Fish Haven</option>
+                        </select>                
+                    <label><span>User in Danger Level:</span></label>
+                        <div class="radio">
+                            <input type="radio" name="danger" value="yes"> Yes<br>
+                            <input type="radio" name="danger" value="maybe"> Maybe<br>
+                            <input type="radio" name="danger" value="no"> No
+                        </div>
+                    <label><span>Additional Information or Comments:</span><textarea name="message" rows="10" cols="30"></textarea></label>
+                </fieldset>
+                <input type="submit" value="Submit Report" class="submitBtn">
+            </form>
+        </div>
+        <section class="contact">
+            <div class="map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5736740.280786325!2d-118.63121618107178!3d45.40646161441475!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5358ffa885e499e9%3A0xd06b300515f78758!2sIdaho!5e0!3m2!1sen!2sus!4v1614530089419!5m2!1sen!2sus"
+                    width="600" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+            <div class="contact-info">
+                <h3>Contact Information</h3>
+                <p>🎯 46 N Main St. Preston, ID. 83263</p>
+                <p>☎️ 208-555-5555</p>
+                <p>📧 weather@checkweather.com</p>
+                <a href="https://www.facebook.com/"><img src="images/facebook.png" alt="Facebook logo"></a>
+                <a href="https://twitter.com/"><img src="images/twitter.png" alt="Twitter logo"></a>
+                <a href="https://www.instagram.com/"><img src="images/instagram.png" alt="Instagram logo"></a>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; Check on Weather | Sterling J. Welker
+        </p>
+        <div class="Date">
+            <span id="currentDate"></span>
+        </div>
+    </footer>
+    <script src="js/currentDate.js"></script>
+    <script src="js/hamburger.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="js/webfontload.js"></script>
+    <script src="js/rating.js"></script>
+</body>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <title>Preston, Idaho | Check on Weather</title>
+    <meta name="description" content="This is the home page for Preston, Idaho.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+</head>
+ 
+<body>
+    <header>
+        <div class="logo-box">
+            <img class="weather-logo" src="images/sun-rain-cloud-emoji.png" alt="Check on Weather website logo" />
+            <section class="headings">
+                <h1>Check on Weather</h1>
+                <p class="slogan"><i>We check the weather, so you don't have to!</i></p>
+            </section>
+        </div>
+        <nav>
+            <button onclick="toggleMenu()">&#9776; Menu</button>
+            <ul id="primaryNav" class="hide">
+                <li><a href="/assignments/lesson-9/index.html">Home</a></li>
+                <li><a href="/assignments/lesson-10/preston10.html">Preston</a></li>
+                <li><a href="#">Soda Springs</a></li>
+                <li><a href="#">Fish Haven</a></li>
+                <li><a href="/assignments/lesson-8/stormcenter.html">Storm Center</a></li>
+                <li><a class="active" href="gallery-7.html">Gallery</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="gallery-grid">
+            <figure>
+                <picture>
+                    <img src="images/placeholder.jpg" data-src="images/foggy.jpg" alt="Fog over a mountain">
+                </picture>
+                <figcaption>Fog over a mountain.</figcaption>
+            </figure>
+            <figure>
+                <picture>
+                    <img src="images/placeholder.jpg" data-src="images/storm-field.jpg" alt="Storm over a grassy field">
+                </picture>
+                <figcaption>Storm in the distance of a grassy field.</figcaption>
+            </figure>
+            <figure>
+                <picture>
+                    <img src="images/placeholder.jpg" data-src="images/snow-sun.jpg" alt="Sun creeping through the trees">
+                </picture>
+                <figcaption>Sun creeping through the trees.</figcaption>
+            </figure>
+            <figure>
+                <picture>
+                    <img src="images/placeholder.jpg" data-src="images/lightning.jpg" alt="Lightning">
+                </picture>
+                <figcaption>Lightning in the night sky.</figcaption>
+            </figure>
+            <figure>
+                <picture>
+                    <img src="images/placeholder.jpg" data-src="images/storm-mountain.jpg" alt="Storm over a mountain">
+                </picture>
+                <figcaption>A storm rolling in.</figcaption>
+            </figure>
+            <figure>
+                <picture>
+                    <img src="images/placeholder.jpg" data-src="images/cloudy.jpg" alt="Cloudy day">
+                </picture>
+                <figcaption>Sun rays on a cloudy day.</figcaption>
+            </figure>
+            <figure>
+                <picture>
+                    <img src="images/placeholder.jpg" data-src="images/autumn-trees.jpg" alt="Autumn trees">
+                </picture>
+                <figcaption>Autumn weather.</figcaption>
+            </figure>
+            <figure>
+                <picture>
+                    <img src="images/placeholder.jpg" data-src="images/moon.jpg" alt="Crescent Moon">
+                </picture>
+                <figcaption>Crescent Moon.</figcaption>
+            </figure>
+            <figure>
+                <picture>
+                    <img src="images/placeholder.jpg" data-src="images/snowy-tree.jpg" alt="Tree in the middle of a snowy field">
+                </picture>
+                <figcaption>Field of snow.</figcaption>
+            </figure>
+
+        </div>
+    </main>
+    <footer>
+        <p>&copy; Check on Weather | Sterling J. Welker
+        </p>
+        <div class="Date">
+            <span id="currentDate"></span>
+        </div>
+    </footer>
+    <script src="js/currentDate.js"></script>
+    <script src="js/hamburger.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="js/webfontload.js"></script>
+    <script src="js/lazyload.js"></script>
+</body>
+
+</html>
