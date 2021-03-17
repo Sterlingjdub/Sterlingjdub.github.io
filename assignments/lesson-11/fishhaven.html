@@ -38,8 +38,12 @@
     </header>
     <main>
         <div class="hero-box">
-            <img class="banner-img" src="images/pexels-pixabay-lg.jpg" alt="A picture of the clouds">
-            <img class="banner-img-sm" src="images/pexels-pixabay-sm.jpg" alt="A picture of the clouds">
+            <picture class="hero-img">
+                <source srcset="images/fishbanner-sm.jpg" media="(max-width: 599px)">
+                <source srcset="images/fishbanner-med.jpg" media="(min-width: 600px) and (max-width: 899px)">
+                <source srcset="images/fishbanner-lg.jpg" media="(min-width: 900px)">
+                <img src="images/fishbanner.jpg" alt="Storm over a lake"> 
+            </picture>
 
             <ul class="weather-summary">
                 <li class="wSum"><b>Weather Summary:</b></li>
