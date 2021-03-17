@@ -1,5 +1,6 @@
 const apiURL = 'https://api.openweathermap.org/data/2.5/weather?id=5604473&appid=557ec8400baee06c0143ae1105085dd1&units=imperial';
 const forecastURL = 'https://api.openweathermap.org/data/2.5/forecast?id=5604473&appid=557ec8400baee06c0143ae1105085dd1&units=imperial';
+const townsURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
 
 fetch(apiURL) 
     .then((response) => response.json())
@@ -65,3 +66,23 @@ fetch(forecastURL)
         }
 
 });
+
+// This will display the list of current events for Preston
+fetch(townsURL)
+  .then((response) =>
+    response.json())
+  .then((jsObject) => {
+    //console.log(jsObject);
+
+    const div = document.querySelector(".events-div");
+
+    jsObject.towns.forEach(town => {
+      if (town.name == "Preston") {
+        town.events.forEach(event => {
+          let par = document.createElement("p");
+          par.innerHTML = `${event}`;
+          div.append(par);
+        })
+      }
+    }); 
+  });
