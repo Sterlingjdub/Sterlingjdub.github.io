@@ -1,8 +1,7 @@
 // This will display the weekly banner only on Fridays
-let d = new Date();
-let day = d.getDay();
-{
-    if (day == 5) {
+let day = new Date();
+window.onload = function pancake() {
+    if (day.getDay() == 4) {
         document.getElementById("banner").style.display = "block";
     }
     else {
