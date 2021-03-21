@@ -177,7 +177,6 @@ li {
 td {
     font-size: 14px;
 }
-
 th img {
     max-width: 50px;
 }
@@ -188,6 +187,9 @@ table {
 .article-info {
     grid-column: 1/2;
     overflow: auto;
+}
+.article-p {
+    text-align:justify;
 }
 .article-img {
     margin: 20px;
