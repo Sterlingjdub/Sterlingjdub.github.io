@@ -22,17 +22,17 @@ fetch(requestURL)
                 
 
                 h2.textContent = towns[i].name;
-                h2.setAttribute('class', 'town-name')
+                h2.setAttribute('class', 'town-name');
                 motto.textContent = towns[i].motto;
-                motto.setAttribute('class', 'town-motto')
+                motto.setAttribute('class', 'town-motto');
                 year.textContent = 'Year Founded: ' + towns[i].yearFounded;
-                population.textContent = 'Population: ' + towns[i].currentPopulation
-                rainfall.textContent = 'Annual Rain Fall: ' + towns[i].averageRainfall
+                population.textContent = 'Population: ' + towns[i].currentPopulation;
+                rainfall.textContent = 'Annual Rain Fall: ' + towns[i].averageRainfall;
                 image.setAttribute('src', "images/" + towns[i].photo);
                 image.setAttribute('alt', towns[i].name);
         
                 card.appendChild(h2);
-                card.appendChild(motto)
+                card.appendChild(motto);
                 card.appendChild(year);
                 card.appendChild(population);
                 card.appendChild(rainfall);

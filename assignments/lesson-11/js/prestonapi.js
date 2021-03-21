@@ -69,20 +69,16 @@ fetch(forecastURL)
 
 // This will display the list of current events for Preston
 fetch(townsURL)
-  .then((response) =>
-    response.json())
+  .then((response) => response.json())
   .then((jsObject) => {
-    //console.log(jsObject);
-
-    const div = document.querySelector(".events-div");
 
     jsObject.towns.forEach(town => {
-      if (town.name == "Preston") {
-        town.events.forEach(event => {
-          let par = document.createElement("p");
-          par.innerHTML = `${event}`;
-          div.append(par);
+      if (town.name == 'Preston') {
+        town.events.forEach(eve => {
+          let townEvents = document.createElement("p");
+          townEvents.innerHTML = `${eve}`;
+          document.querySelector('section.events').append(townEvents);
         })
       }
-    }); 
-  });
+    })
+  }); 

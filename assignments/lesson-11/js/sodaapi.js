@@ -63,5 +63,20 @@ fetch(forecastURL)
             document.getElementById(`icon` + num).setAttribute('alt', desc);
           }
         }
-
 });
+
+// This will display the list of current events for Soda Springs
+fetch(townsURL)
+  .then((response) => response.json())
+  .then((jsObject) => {
+
+    jsObject.towns.forEach(town => {
+      if (town.name == 'Soda Springs') {
+        town.events.forEach(eve => {
+          let townEvents = document.createElement("p");
+          townEvents.innerHTML = `${eve}`;
+          document.querySelector('section.events').append(townEvents);
+        })
+      }
+    })
+  }); 
