@@ -1,5 +1,6 @@
 const apiURL = 'https://api.openweathermap.org/data/2.5/weather?id=5585010&appid=557ec8400baee06c0143ae1105085dd1&units=imperial';
 const forecastURL = 'https://api.openweathermap.org/data/2.5/forecast?id=5585010&appid=557ec8400baee06c0143ae1105085dd1&units=imperial';
+const townsURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
 
 fetch(apiURL) 
     .then((response) => response.json())
