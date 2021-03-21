@@ -1,6 +1,6 @@
 body {
     background-color: #F3F6F7;
-    font-size: 16px; 
+    font-size: 16px;
     line-height: 30px;
     font-family: "Roboto", "Times New Roman", serif;
     text-align: center;
@@ -20,7 +20,7 @@ nav button {
     color: #FFA400;
     overflow: hidden;
 }
-  
+
 nav ul {
     font-family: "Bebas Neue", "Arial Black", sans-serif;
     list-style: none;
@@ -30,7 +30,7 @@ nav ul {
     letter-spacing: 1px;
     overflow: hidden;
 }
-    
+
 nav ul li a {
     display: block;
     color: #FFA400;
@@ -61,14 +61,14 @@ nav .active {
 }
 
 
-  
+
 header {
     width: 100%;
     text-align: center;
     margin: 0 auto;
     background: #11376A;
 }
-  
+
 .weather-logo {
     margin: 0.5em;
     padding: 0.2em;
@@ -87,6 +87,7 @@ header {
 .hero-img img {
     max-width: 100%;
 }
+
 h1 {
     font-size: 2em;
     font-family: "Bebas Neue", "Arial Black", sans-serif;
@@ -94,7 +95,7 @@ h1 {
     color: #F3F6F7;
     margin-bottom: 0;
 }
-  
+
 h2 {
     font-family: "Bebas Neue", "Arial Black", sans-serif;
     color: #080B0C;
@@ -110,6 +111,7 @@ h3 {
     letter-spacing: 1px;
     font-size: 18px;
 }
+
 .slogan {
     font-size: .8em;
     margin-bottom: 0;
@@ -117,6 +119,7 @@ h3 {
     text-align: center;
     color: #F3F6F7;
 }
+
 #banner {
     display: block;
     background-color: #FFA400;
@@ -124,10 +127,12 @@ h3 {
     margin: 0 auto;
     margin-top: -10px;
 }
+
 .banner-img {
     display: none;
     grid-column: 1/2;
 }
+
 .banner-img-sm {
     grid-column: 1/2;
     width: 100%;
@@ -137,32 +142,37 @@ p {
     font-size: 14px;
     margin: 10px;
 }
-  
+
 .grid-container {
     display: grid;
     grid-template-columns: 1fr;
     grid-gap: 1em;
-    margin-top: 10px;;
+    margin-top: 10px;
+    ;
 }
-  
+
 main section {
     border: 1px solid #11376A;
     border-radius: 5px;
     margin: 20px;
     background-color: #EAECEC;
 }
+
 .weather-summary {
     display: none;
 }
+
 li {
     list-style-type: none;
 }
+
 .weather-summary-sm {
     padding: 18px;
     text-align: justify;
     background-color: rgba(240, 240, 240, 0.8);
     border: none;
 }
+
 .wSum {
     font-family: "Bebas Neue", "Arial Black", sans-serif;
     font-size: 20px;
@@ -174,24 +184,30 @@ li {
 .forcast {
     grid-column: 1/2;
 }
+
 td {
     font-size: 14px;
 }
+
 th img {
     max-width: 50px;
 }
+
 table {
     width: 100%;
     margin: 10px auto;
 }
+
 .article-info {
     grid-column: 1/2;
     overflow: auto;
 }
+
 .article-p {
     text-align: left;
     margin: 20px;
 }
+
 .article-img {
     margin: 20px;
     box-shadow: 5px 5px 5px #000;
@@ -204,14 +220,17 @@ table {
     border-radius: 0;
     margin: 0;
 }
+
 iframe {
     margin-bottom: -10px;
     padding: 0;
     width: 100%;
 }
+
 .contact-info {
     margin: auto;
 }
+
 .contact img {
     width: 24px;
     margin: 20px;
@@ -221,7 +240,7 @@ iframe {
     text-align: left;
     margin: 20px;
 }
-  
+
 footer {
     background-color: #11376A;
     font-family: "Roboto", "Times New Roman", serif;
@@ -232,6 +251,7 @@ footer {
     max-width: 100%;
     margin: 0;
 }
+
 footer p {
     color: #F3F6F7;
 }
@@ -247,7 +267,7 @@ footer p {
 figure img {
     filter: blur(0em);
     transition: filter 0.5s;
-    margin: 10px;	
+    margin: 10px;
     width: 90%;
 }
 
@@ -263,6 +283,7 @@ fieldset {
     border: 1px solid black;
     text-align: left;
 }
+
 legend {
     color: #000;
     margin-left: 8%;
@@ -281,18 +302,25 @@ label {
     padding-top: 1em;
     font-weight: bold;
 }
-label, select, .radio {
+
+label,
+select,
+.radio {
     margin-left: 6%;
 }
+
 .severity {
-	display: flex;
+    display: flex;
 }
+
 #ratingvalue {
     margin-left: 10px;
 }
+
 .regions {
     width: 50%;
 }
+
 label span {
     display: block;
     font-size: 16px;
@@ -304,12 +332,13 @@ label span {
 .personal-info input {
     width: 90%;
 }
+
 input.submitBtn {
     color: black;
     border: solid 1px #111;
     border-radius: 5px;
     width: 25%;
-    margin: .5em 0 1em 1em;
+    margin: .5em 0 2em 1em;
     font-size: .75em;
     padding: .6em;
     background: #FFA400;
@@ -350,10 +379,12 @@ input.submitBtn {
     box-shadow: 5px 5px 5px #000;
     width: 50%;
 }
+
 .clearfix:after {
-    content: " "; /* Older browser do not support empty content */
+    content: " ";
+    /* Older browser do not support empty content */
     visibility: hidden;
     display: block;
     height: 0;
     clear: both;
- }
+}
