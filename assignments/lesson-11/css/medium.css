@@ -79,6 +79,10 @@
     .regions {
         width: 40%;
     }
+
+    input.submitBtn {
+        font-size: 1em;
+    }
     /* Home Page */
     .home-grid {
         grid-template-columns: 1fr 1fr;
