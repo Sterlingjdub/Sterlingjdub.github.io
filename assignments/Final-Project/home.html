@@ -36,34 +36,107 @@
     <main>
         <div class="hero-box">
             <picture class="hero-img">
-                <source srcset="images/home-banner-sm.jpg" media="(max-width: 599px)">
-                <source srcset="images/home-banner-med.jpg" media="(min-width: 600px) and (max-width: 899px)">
-                <source srcset="images/home-banner-lg.jpg" media="(min-width: 900px)">
-                <img src="images/home-banner.jpg" alt="Sunrise over field">
+                <source srcset="images/skyline-SLC-sm.jpg" media="(max-width: 599px)">
+                <source srcset="images/skyline-SLC-med.jpg" media="(min-width: 600px) and (max-width: 899px)">
+                <source srcset="images/skyline-SLC-lg.jpg" media="(min-width: 900px)">
+                <img src="images/skyline-SLC.jpg" alt="Skyline of downtown Salt Lake City">
             </picture>
+            <ul class="weather-summary">
+                <li class="wSum"><b>Join the Chamber</b></li>
+                <li>Helping your business</li>
+                <li>recover faster, stronger!</li>
+                <li><button>Learn More</button></li>
+            </ul>
         </div>
-        <div class="home-grid">
+        <div class="grid-container">
+            <h2>Salt Lake City</h2>
+            <section class="weather-summary-sm">
+                <h4 class="wSum"><b>Join the Chamber</b></h4>
+                <ul>
+                    <li>Helping your business</li>
+                    <li>recover faster, stronger!</li>
+                    <li><button>Learn More</button></li>
+                </ul>
+            </section>
+            <section>
+                <div class="forcast">
+                    <h3>5-day Forcast</h3>
+                    <table>
+                        <tbody>
+                            <tr class="days">
+                                <td><b><span id="day1"></span></b></td>
+                                <td><b><span id="day2"></span></b></td>
+                                <td><b><span id="day3"></span></b></td>
+                                <td><b><span id="day4"></span></b></td>
+                                <td><b><span id="day5"></span></b></td>
+                            </tr>
+                            <tr>
+                                <th><img src="#" alt="" id="icon1"></th>
+                                <th><img src="#" alt="" id="icon2"></th>
+                                <th><img src="#" alt="" id="icon3"></th>
+                                <th><img src="#" alt="" id="icon4"></th>
+                                <th><img src="#" alt="" id="icon5"></th>
+                            </tr>
+                            <tr>
+                                <td><b>H:</b> <span id=tempH1></span>&#176;F</td>
+                                <td><b>H:</b> <span id=tempH2></span>&#176;F</td>
+                                <td><b>H:</b> <span id=tempH3></span>&#176;F</td>
+                                <td><b>H:</b> <span id=tempH4></span>&#176;F</td>
+                                <td><b>H:</b> <span id=tempH5></span>&#176;F</td>
+                            </tr>
+                            <tr>
+                                <td><b>L:</b> <span id=tempL1></span>&#176;F</td>
+                                <td><b>L:</b> <span id=tempL2></span>&#176;F</td>
+                                <td><b>L:</b> <span id=tempL3></span>&#176;F</td>
+                                <td><b>L:</b> <span id=tempL4></span>&#176;F</td>
+                                <td><b>L:</b> <span id=tempL5></span>&#176;F</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+            <section class="events">
+                <h3>Upcoming Events</h3>
+            </section>
+            <section>
+                <div class="article-info">
+                    <h3>Preston City Budget</h3>
+                    <img class="article-img" src="images/budget.jpg" alt="Budgets and plans">
+                    <p class="article-p"> &emsp;&emsp;"Preston City is living within its means, said auditors at the
+                        last Preston
+                        City Council meeting. Mayor Dan Keller attributed much of that to decreased expenses. “Kudos to
+                        department heads,” for finding ways to be more efficient, he said.<br>
+
+                        &emsp;&emsp;That the city was able to create a surplus of $446,163 as opposed to a deficit of
+                        27,272 in
+                        prior year is pretty significant, said Mayor Keller. That is almost 10 percent of the $5,034,707
+                        budget. “I’m extremely pleased,” he said.<br>
+
+                        &emsp;&emsp;The council was also told that they have enough liquid assets to cover nine months
+                        of expenses,
+                        another positive aspect of the budget, they were told.<br>
+
+                        &emsp;&emsp;In other business, the city unanimously approved an ordinance that allows for the
+                        rezoning of
+                        about 20 acres east of State Street and north of 300 North so that it can be developed into
+                        housing, as requested by Chad Salmon two weeks before.<br>
+
+                        &emsp;&emsp;However, the council tabled a decision to approve the third stage in the Country
+                        Club Estates
+                        between holes #12 and #16 of the golf course until documents are provided assuring that water
+                        shares have been turned over to the homeowners association and that an assurity bond has been
+                        secured." (Continued at <a
+                            href="https://www.hjnews.com/preston/preston-city-budget-in-good-shape-say-auditors/article_95b6ce98-76e8-5bdf-b84a-e0ad5e1a693e.html">The
+                            Preston Citizen</a>).</p>
+                </div>
+            </section>
         </div>
-        <section class="home-article">
-            <div class="article-info">
-                <h3>COVID-19 Current Updates</h3>
-                <img class="home-img" src="images/covid.jpg" alt="Corona Virus">
-                <p class="article-p"> &emsp;&emsp;"State-level case, laboratory, and hospital data updated by 5:00 p.m.
-                    MT Monday
-                    through Saturday, excluding holidays, and are current as of 3/20/2021. Vaccine “Data at a Glance”
-                    updated by 5:00 p.m. MT Monday through Saturday, excluding holidays, and are current as of
-                    3/20/2021. Case data are based on surveillance system records provided by the public health
-                    districts. Vaccine administration data are based on data contained in the Immunization Reminder
-                    Information System (IRIS). Public health district data will be updated on their agency website at
-                    their discretion and might differ from data presented here. Data are preliminary and subject to
-                    change." (Continued at <a href="https://coronavirus.idaho.gov/">Idaho Official Government</a>).</p>
-            </div>
-        </section>
         <section class="contact">
             <div class="map">
                 <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5736740.280786325!2d-118.63121618107178!3d45.40646161441475!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5358ffa885e499e9%3A0xd06b300515f78758!2sIdaho!5e0!3m2!1sen!2sus!4v1614530089419!5m2!1sen!2sus"
-                    width="600" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d47365.773853438026!2d-111.91534443111685!3d42.09974162639047!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8754f78c7cda6c31%3A0xf1b3b4fc465a4a3f!2sPreston%2C%20ID%2083263!5e0!3m2!1sen!2sus!4v1612639741382!5m2!1sen!2sus"
+                    width="600" height="200" style="border:0;" allowfullscreen="" aria-hidden="false"
+                    tabindex="0"></iframe>
             </div>
             <div class="contact-info">
                 <h3>Contact Information</h3>
@@ -85,9 +158,9 @@
     </footer>
     <script src="js/currentDate.js"></script>
     <script src="js/hamburger.js"></script>
+    <script src="js/prestonapi.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
     <script src="js/webfontload.js"></script>
-    <script src="js/towninfo.js"></script>
 </body>
 
 </html>

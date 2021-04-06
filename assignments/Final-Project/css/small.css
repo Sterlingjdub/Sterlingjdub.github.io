@@ -1,5 +1,5 @@
 body {
-    background-color: #F3F6F7;
+    background-color: #FDFBF2;
     font-size: 16px;
     line-height: 30px;
     font-family: "Roboto", "Times New Roman", serif;
@@ -46,17 +46,17 @@ nav ul.hide {
 }
 
 nav button:hover {
-    background-color: #86A5AE;
+    background-color: #F4F1EA;
     color: #080B0C;
 }
 
 nav a:hover {
-    background-color: #86A5AE;
+    background-color: #F4F1EA;
     color: #080B0C;
 }
 
 nav .active {
-    background-color: #F3F6F7;
+    background-color: #FDFBF2;
     color: #485F89;
 }
 
@@ -167,8 +167,8 @@ li {
 }
 
 .weather-summary-sm {
-    padding: 18px;
-    text-align: justify;
+    
+    text-align: center;
     background-color: rgba(240, 240, 240, 0.8);
     border: none;
 }
