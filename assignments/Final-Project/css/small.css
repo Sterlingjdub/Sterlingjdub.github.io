@@ -12,7 +12,7 @@ nav button {
     width: 100%;
     background-color: transparent;
     border: none;
-    font-family: "Bebas Neue", "Arial Black", sans-serif;
+    font-family: "Montserrat", "Arial Black", sans-serif;
     margin: auto;
     padding: 1rem;
     font-size: 1.2em;
@@ -22,7 +22,7 @@ nav button {
 }
 
 nav ul {
-    font-family: "Bebas Neue", "Arial Black", sans-serif;
+    font-family: "Montserrat", "Arial Black", sans-serif;
     list-style: none;
     margin: 0;
     padding: 0;
@@ -90,14 +90,14 @@ header {
 
 h1 {
     font-size: 2em;
-    font-family: "Bebas Neue", "Arial Black", sans-serif;
+    font-family: "Montserrat", "Arial Black", sans-serif;
     text-align: center;
     color: #F3F6F7;
     margin-bottom: 0;
 }
 
 h2 {
-    font-family: "Bebas Neue", "Arial Black", sans-serif;
+    font-family: "Montserrat", "Arial Black", sans-serif;
     color: #080B0C;
     text-align: center;
     max-width: 50%;
@@ -107,18 +107,11 @@ h2 {
 }
 
 h3 {
-    font-family: "Bebas Neue", "Arial Black", sans-serif;
+    font-family: "Montserrat", "Arial Black", sans-serif;
     letter-spacing: 1px;
     font-size: 18px;
 }
 
-.slogan {
-    font-size: .8em;
-    margin-bottom: 0;
-    font-family: "Roboto", "Times New Roman", serif;
-    text-align: center;
-    color: #F3F6F7;
-}
 
 #banner {
     display: block;
@@ -152,10 +145,10 @@ p {
 }
 
 main section {
-    border: 1px solid #11376A;
+    border: 1px solid black;
     border-radius: 5px;
     margin: 20px;
-    background-color: #EAECEC;
+    background-color: #F4F1EA;
 }
 
 .weather-summary {
@@ -174,7 +167,7 @@ li {
 }
 
 .wSum {
-    font-family: "Bebas Neue", "Arial Black", sans-serif;
+    font-family: "Montserrat", "Arial Black", sans-serif;
     font-size: 20px;
     letter-spacing: 1px;
     margin-left: 2em;

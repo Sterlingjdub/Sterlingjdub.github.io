@@ -1,5 +1,5 @@
-const apiURL = 'https://api.openweathermap.org/data/2.5/weather?id=5604473&appid=557ec8400baee06c0143ae1105085dd1&units=imperial';
-const forecastURL = 'https://api.openweathermap.org/data/2.5/forecast?id=5604473&appid=557ec8400baee06c0143ae1105085dd1&units=imperial';
+const apiURL = 'https://api.openweathermap.org/data/2.5/onecall?lat=40.761&lon=-111.891&exclude=hourly,minutely&appid=557ec8400baee06c0143ae1105085dd1&units=imperial';
+const forecastURL = 'https://api.openweathermap.org/data/2.5/onecall?lat=40.761&lon=-111.891&exclude=hourly,minutely&appid=557ec8400baee06c0143ae1105085dd1';
 const townsURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
 
 fetch(apiURL) 
