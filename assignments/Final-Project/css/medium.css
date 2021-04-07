@@ -89,6 +89,22 @@
         margin: auto;
     }
 
+    /* Salt Lake City Page */
+    .pioneers {
+        float: right;
+        max-width: 100%;
+        margin-left: 10px;
+    }
+    .city-creek {
+        float: left;
+        margin-right: 10px;
+    }
+    .current {
+        clear: right;
+    }
+    .today {
+        clear: both;
+    }
     /* Gallery Page */
     .gallery-grid {
         grid-template-columns: 1fr 1fr;
