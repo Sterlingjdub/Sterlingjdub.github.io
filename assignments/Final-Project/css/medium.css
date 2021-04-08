@@ -24,6 +24,14 @@
         font-size: 1.3em;
     }
 
+    h4 {
+        font-size: 1.1em;
+    }
+
+    h5 {
+        font-size: .9em;
+    }
+
     .slogan {
         font-size: 1em;
     }
@@ -92,17 +100,29 @@
     /* Salt Lake City Page */
     .pioneers {
         float: right;
-        max-width: 100%;
+        max-width: 40%;
         margin-left: 10px;
     }
     .city-creek {
         float: left;
+        max-width: 40%;
         margin-right: 10px;
     }
     .current {
         clear: right;
     }
     .today {
+        clear: both;
+    }
+    .events img {
+        float: right;
+        max-width: 30%;
+        margin-left: 10px;
+    }
+    .events p, h5 {
+        clear: left;
+    }
+    .events {
         clear: both;
     }
     /* Gallery Page */

@@ -22,6 +22,7 @@ nav button {
     letter-spacing: 1px;
     color: #D99330;
     overflow: hidden;
+    background-color: #485F89;
 }
 
 nav ul {
@@ -75,7 +76,7 @@ header {
 .chamber-logo {
     margin: 0.5em;
     padding: 0.2em;
-    max-width: 50px;
+    max-width: 80px;
 }
 
 .logo-box {
@@ -91,7 +92,7 @@ header {
 }
 
 h1 {
-    font-size: 2em;
+    font-size: 1.3em;
     font-family: "Montserrat", "Arial Black", sans-serif;
     text-align: center;
     color: black;
@@ -114,6 +115,17 @@ h3 {
     font-size: 18px;
 }
 
+h4 {
+    font-family: "Montserrat", "Arial Black", sans-serif;
+    letter-spacing: 1px;
+    font-size: 16px;
+}
+
+h5 {
+    font-family: "Montserrat", "Arial Black", sans-serif;
+    letter-spacing: 1px;
+    font-size: 14px;
+}
 
 #banner {
     display: block;
@@ -257,10 +269,26 @@ footer p {
     text-align: left;
 }
 .pioneers {
-    max-width: 70%;
+    max-width: 60%;
+}
+.city-creek {
+    max-width: 60%;
 }
 .current {
     text-align: left;
+}
+.events {
+    padding-top: 20px;
+}
+.events a {
+    text-decoration: none;
+    color: #485F89;
+}
+.events a:hover {
+    color: #D99330;
+}
+.events img {
+    max-width: 60%;
 }
 /* Gallery Page */
 .gallery-grid {

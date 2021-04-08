@@ -48,6 +48,13 @@
         font-size: 24px
     }
 
+    h4 {
+        font-size: 22px
+    }
+
+    h5 {
+        font-size: 20px;
+    }
     p {
         font-size: 18px;
     }
@@ -112,10 +119,18 @@
     /* Salt Lake City Page */
     .pioneers {
         margin-left: 20px;
+        max-width: 100%;
     }
     .city-creek {
         margin-right: 20px;
+        max-width: 100%;
     }
+    .events img {
+        margin-left: 20px;
+        margin-top: -80px;
+        max-width: 20%;
+    }
+
     /* Gallery Page */
     .gallery-grid {
         grid-template-columns: 1fr 1fr 1fr;
