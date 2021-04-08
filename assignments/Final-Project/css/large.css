@@ -131,12 +131,16 @@
         max-width: 20%;
     }
 
-    /* Gallery Page */
-    .gallery-grid {
+    /* Directory Page */
+    .cards {
         grid-template-columns: 1fr 1fr 1fr;
     }
 
-    figure:hover {
+    .cards section {
+        border: 1px solid black;
+    }
+
+    .cards section:hover {
         box-shadow: 0 0 30px black;
     }
 

@@ -117,8 +117,8 @@
     .events {
         clear: both;
     }
-    /* Gallery Page */
-    .gallery-grid {
+    /* Directory Page */
+    .cards {
         grid-template-columns: 1fr 1fr;
     }
 
