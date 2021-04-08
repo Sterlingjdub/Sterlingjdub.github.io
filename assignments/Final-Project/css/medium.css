@@ -50,20 +50,15 @@
         display: none;
     }
 
-    .weather-summary-sm {
+    .join-call-sm {
         padding: 18px;
-        background-color: rgba(240, 240, 240, 0.8);
+        background-color: #d99330c4;
         border: none;
     }
 
-    .weather-summary-sm ul {
-        columns: 2;
-        -webkit-columns: 2;
-        -moz-columns: 2;
-        margin-left: 20px;
-    }
 
-    .wSum {
+
+    .jCall {
         margin-left: 60px;
     }
 

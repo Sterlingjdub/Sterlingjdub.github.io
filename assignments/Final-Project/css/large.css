@@ -68,7 +68,7 @@
         position: relative;
     }
 
-    .weather-summary {
+    .join-call {
         display: block;
         position: absolute;
         background-color: #d99330c4;
@@ -80,11 +80,11 @@
         list-style-type: none;
     }
 
-    .wSum {
+    .jCall {
         margin: 0;
     }
 
-    .weather-summary-sm {
+    .join-call-sm {
         display: none;
     }
 
@@ -109,6 +109,9 @@
 
     .contact img {
         margin: 20px;
+    }
+    #business {
+        margin-top: 0;
     }
 
     iframe {
