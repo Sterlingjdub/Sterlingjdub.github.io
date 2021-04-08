@@ -309,12 +309,11 @@ img[data-src] {
     filter: blur(5px);
 }
 
-/* Storm Center */
+/* Join Us */
 fieldset {
-    background-color: #EAECEC;
+    background-color: #F4F1EA;
     border-radius: 5px;
     margin: 2em;
-    border: 1px solid black;
     text-align: left;
 }
 
@@ -322,11 +321,8 @@ legend {
     color: #000;
     margin-left: 8%;
     padding: .5em;
-    border: 1px solid black;
-    background-color: skyblue;
-    border-radius: 5px;
     font-weight: bolder;
-    font-size: 19px;
+    font-size: 20px;
 }
 
 label {
@@ -374,9 +370,10 @@ input.submitBtn {
     width: 25%;
     margin: .5em 0 2em 1em;
     font-size: .75em;
+    font-weight: bold;
     padding: .6em;
-    background: #FFA400;
-    box-shadow: 4px 4px 10px #666;
+    background: #D99330;
+    box-shadow: 4px 4px 10px rgb(163, 162, 162);
 }
 
 /* Thanks */
