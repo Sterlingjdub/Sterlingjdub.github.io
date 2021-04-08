@@ -37,12 +37,12 @@ fetch("directory.json")
 
     //Display grid
 function displayGrid() {
-    document.getElementById("cards").classList.add("grid");
-    document.getElementById("cards").classList.remove("list");
+    document.getElementsByClassName("cards").classList.add("grid");
+    document.getElementsByClassName("cards").classList.add("grid");
 }
   
   //Display list
 function displayList() {
-    document.getElementById("cards").classList.add("list");
-    document.getElementById("cards").classList.remove("grid");
+    document.getElementsByClassName("cards").classList.add("grid");
+    document.getElementsByClassName("cards").classList.add("grid");
 }
