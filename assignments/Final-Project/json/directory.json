@@ -1,0 +1,58 @@
+{
+    "business": [
+      {
+        "name": "Alpha Graphics",
+        "phone": "801-461-0500",
+        "link": "https://www.alphagraphics.com/us-utah-salt-lake-city-us614",
+        "image": "Images/alphagraphics.png"
+      },
+      {
+        "name": "America First Credit Union",
+        "phone": "800-999-3961",
+        "link": "https://www.americafirst.com/",
+        "image": "Images/americafirst.jpg"
+      },
+      {
+        "name": "212 Fitness",
+        "phone": "801-946-9732",
+        "link": "https://www.twotwelvefitness.com/",
+        "image": "Images/212.png"
+      },
+      {
+        "name": "Community Insurance Utah",
+        "phone": "801-973-5199",
+        "link": "https://www.theciuteam.com/",
+        "image": "Images/ciu.jpeg"
+      },
+      {
+        "name": "FUEL Marketing",
+        "phone": "801-484-2888",
+        "link": "https://www.fuelmarketing.com/",
+        "image": "Images/fuel.png"
+      },
+      {
+        "name": "Intermountain Healthcare",
+        "phone": "800-442-1128",
+        "link": "https://intermountainhealthcare.org/",
+        "image": "Images/intermountain.png"
+      },
+      {
+        "name": "Avalance Software",
+        "phone": "855-553-4763",
+        "link": "https://www.avalanchesoftware.com/",
+        "image": "Images/avalanche.png"
+      },
+      {
+        "name": "Towne Park",
+        "phone": "800-291-6111",
+        "link": "https://www.townepark.com/",
+        "image": "Images/townepark.png"
+      },
+      {
+        "name": "Wasatch Defense Lawyers",
+        "phone": "801-845-3296",
+        "link": "https://wasatchdefenselawyers.com/",
+        "image": "Images/lawyers.png"
+      }
+    ]
+  }
