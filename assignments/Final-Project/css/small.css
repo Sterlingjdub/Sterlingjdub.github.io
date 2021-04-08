@@ -291,27 +291,26 @@ footer p {
     max-width: 60%;
 }
 /* Directory Page */
+.grid-menu {
+    display: none;
+}
+.grid-view,
+.list-view,
 .cards {
     display: grid;
     grid-template-columns: 1fr;
     gap: 10px;
     justify-content: center;
+    
 }
+
 .cards section {
     border: 1px solid black;
     border-radius: 5px;
     background-color: #F4F1EA;
-    width: 90%;
 }
-figure img {
-    filter: blur(0em);
-    transition: filter 0.5s;
-    margin: 10px;
-    width: 90%;
-}
-
-img[data-src] {
-    filter: blur(5px);
+.cards img {
+    max-width: 40%;
 }
 
 /* Join Us */

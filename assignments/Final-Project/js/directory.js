@@ -35,14 +35,17 @@ fetch("directory.json")
         }
     });
 
-    //Display grid
-function displayGrid() {
-    document.getElementById("cards").classList.add("grid");
-    document.getElementById("cards").classList.remove("list");
+
+//Display the list view
+function listView() {
+    document.getElementById("cards").classList.add("list-view");
+    document.getElementById("cards").classList.remove("grid-view");
 }
+
+//Display the grid view
+function gridView() {
+    document.getElementById("cards").classList.add("grid-view");
+    document.getElementById("cards").classList.remove("list-view");
+  }
   
-  //Display list
-function displayList() {
-    document.getElementById("cards").classList.add("list");
-    document.getElementById("cards").classList.remove("grid");
-}
+

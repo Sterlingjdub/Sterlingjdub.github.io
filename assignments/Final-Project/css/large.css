@@ -132,9 +132,13 @@
     }
 
     /* Directory Page */
-    .cards {
+    div .grid-view {
         grid-template-columns: 1fr 1fr 1fr;
     }
+    .list-view {
+        grid-template-columns: 1fr;
+    }
+
 
     .cards section {
         border: 1px solid black;

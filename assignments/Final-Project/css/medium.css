@@ -118,10 +118,24 @@
         clear: both;
     }
     /* Directory Page */
-    .cards {
-        grid-template-columns: 1fr 1fr;
+    .grid-menu {
+        display: block;
     }
 
+    .view:hover {
+        box-shadow: 0 0 30px black;
+    }
+    .grid-view {
+        grid-template-columns: 1fr 1fr;
+    }
+    .list-view {
+        grid-template-columns: 1fr;
+        margin: auto;
+    }
+    .cards section {
+        width: 80%;
+        margin: 20px auto;
+    }
     /* Join Us */
     .regions {
         width: 40%;
