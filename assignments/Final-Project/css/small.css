@@ -310,6 +310,13 @@ img[data-src] {
 }
 
 /* Join Us */
+.memberships {
+    text-align: left;
+    margin-left: 50px;
+}
+.memberships h5 {
+    text-decoration: underline;
+}
 fieldset {
     background-color: #F4F1EA;
     border-radius: 5px;

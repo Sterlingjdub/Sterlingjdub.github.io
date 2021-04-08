@@ -5,7 +5,7 @@
     }
 
     nav button {
-        font-size: 1.8em;
+        font-size: 1.5em;
     }
 
     nav ul {
@@ -13,11 +13,12 @@
     }
 
     h1 {
-        font-size: 2.5em;
+        font-size: 1.8em;
+        margin-bottom: 10px;
     }
 
     h2 {
-        font-size: 1.8em;
+        font-size: 1.6em;
     }
 
     h3 {
@@ -30,10 +31,6 @@
 
     h5 {
         font-size: .9em;
-    }
-
-    .slogan {
-        font-size: 1em;
     }
 
     p {

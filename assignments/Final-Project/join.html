@@ -57,51 +57,76 @@
                     to maximize your exposure and achieve your goals.
                 </p>
                 <p>
-                    &emsp;&emsp;If you would like to learn more, please fill out the form below, and one of our representatives
-                    will contact you.
+                    &emsp;&emsp;If you would like to learn more, please review our membership options and fill out the form below.
                 </p>
+            </section>
+            <section class="memberships">
+                <h5>Non-Profit</h5>
+                <ul>
+                    <li><b>Benefits:</b></li>
+                    <li>- The list of our membership directory</li>
+                    <li>- One(1) registration to Chamber Lunch and Business After Hours event</li>
+                </ul>
+                <h5>Bronze</h5>
+                <ul>
+                    <li><b>Benefits:</b></li>
+                    <li>- All benefits from the Non-Profit membership</li>
+                    <li>- Two(2) registrations to Chamber Lunch and Business After Hours event</li>
+                    <li>- Enhanced website listing in Chamber Business Directory </li>
+                </ul>
+                <h5>Silver</h5>
+                <ul>
+                    <li><b>Benefits:</b></li>
+                    <li>- All benefits from the Bronze membership</li>
+                    <li>- Four(4) registrations to Chamber Lunch and Business After Hours event</li>
+                    <li>- Company advertisement on Chamber podcast </li>
+                    <li>- Invitation to participate in Chamber committees or task forces </li>
+                </ul>
+                <h5>Gold</h5>
+                <ul>
+                    <li><b>Benefits:</b></li>
+                    <li>- All benefits from the Silver membership</li>
+                    <li>- Unlimited registrations to Chamber Lunch and Business After Hours event</li>
+                    <li>- Prime-positioned website listing in Chamber Business Directory </li>
+                    <li>- Access to Sponsorship Level Packages</li>
+                    <li>- Eligibility for Chamber Board of Directors</li>
+                </ul>
             </section>
             <form action="thanks.html" name="w-form" id="w-form">
                 <fieldset>
                     <legend><span>Personal Information</span></legend>
-                    <label class="personal-info"><span>Full Name: *</span><input name="fullname" type="text" value=""
-                            pattern="[a-zA-Z -._]{5,99}" placeholder="Full Name" required></label>
-                    <label class="personal-info"><span>Email:</span><input name="email" type="email" value=""
-                            placeholder="youremail@email.com"></label>
-                    <label><span>Phone Number: *</span><input name="phone" type="tel" value="" placeholder="2085551234"
-                            pattern="[0-9]{10}" required></label>
-                    <label><span>Zip Code: *</span><input name="zipcode" type="number" value="" placeholder="xxxxx"
-                            required></label>
+                    <label class="personal-info"><span>First Name: *</span><input name="firstname" type="text" value=""
+                            pattern="[a-zA-Z -._]{5,99}" required></label>
+                    <label class="personal-info"><span>Last Name: *</span><input name="lastname" type="text" value=""
+                            pattern="[a-zA-Z -._]{5,99}" required></label>
+                    <label class="personal-info"><span>Job Title: </span><input name="jobtitle" type="text" value=""
+                            pattern="[a-zA-Z -._]{5,99}"></label>
+                    <label class="personal-info"><span>Email: *</span><input name="email" type="email" value=""
+                            placeholder="youremail@email.com" required></label>
+                    <label><span>Phone Number: </span><input name="phone" type="tel" value="" placeholder="8015551234"
+                            pattern="[0-9]{10}"></label>
                 </fieldset>
                 <fieldset>
-                    <legend><span>Storm Information</span></legend>
-                    <label><span>Storm Date:</span><input name="date" type="date" value=""></label>
-                    <label><span>Storm Type:</span><input name="type" list="types" value=""></label>
-                    <datalist id="types">
-                        <option value="Flash Flood"></option>
-                        <option value="Hail"></option>
-                        <option value="Hurricane"></option>
-                        <option value="Thunderstorm"></option>
-                        <option value="Tornado"></option>
-                    </datalist>
-                    <label class="severity"><span>Storm Severity:</span> <span id="ratingvalue">5</span></label>
-                    <label>1 <input name="severity" type="range" id="rating" value="5" min="1" max="10" step="1"
-                            oninput="adjustRating(this.value)" onchange="adjustRating(this.value)"> 10</label>
-                    <label><span>Storm Region:</span></label>
-                    <select name="regions" class="regions">
-                        <option value="select" selected disabled>Select Region</option>
-                        <option value="preston">Preston</option>
-                        <option value="soda springs">Soda Springs</option>
-                        <option value="fish haven">Fish Haven</option>
-                    </select>
-                    <label><span>User in Danger Level:</span></label>
+                    <legend><span>Business Information</span></legend>
+                    <label class="company-info"><span>Business Name: *</span><input name="businessname" type="text" value=""
+                        pattern="[a-zA-Z -._]{5,99}" required></label>
+                    <label class="company-info"><span>Business Website: </span><input name="website" type="url" value=""
+                        placeholder="www.website.com" pattern="https://.*" size="30"></label>
+                    <label class="company-info"><span>Business Address: </span><input name="address" type="text" value=""></label>
+                    <label><span>Zip Code: *</span><input name="zipcode" type="number" value="" placeholder="xxxxx"></label>
+                    <label><span>Business Description:</span><textarea name="message" rows="10"
+                        cols="27"></textarea></label>
+                </fieldset>
+                <fieldset>
+                    <legend><span>Select a Membership Level</span></legend>
+                    <label><span>Membership:</span></label>
                     <div class="radio">
-                        <input type="radio" name="danger" value="yes"> Yes<br>
-                        <input type="radio" name="danger" value="maybe"> Maybe<br>
-                        <input type="radio" name="danger" value="no"> No
+                        <input type="radio" name="membership" value="Gold"> Gold ($1,000)<br>
+                        <input type="radio" name="membership" value="Silver"> Silver ($400)<br>
+                        <input type="radio" name="membership" value="Bronze"> Bronze ($200)<br>
+                        <input type="radio" name="membership" value="Non-Profit"> Non-Profit ($100)<br>
                     </div>
-                    <label><span>Additional Information or Comments:</span><textarea name="message" rows="10"
-                            cols="27"></textarea></label>
+                    <p><i>*Please refer to the Membership key for further information </i></p>
                 </fieldset>
                 <input type="submit" value="Continue" class="submitBtn">
             </form>
@@ -109,14 +134,14 @@
         <section class="contact">
             <div class="map">
                 <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5736740.280786325!2d-118.63121618107178!3d45.40646161441475!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5358ffa885e499e9%3A0xd06b300515f78758!2sIdaho!5e0!3m2!1sen!2sus!4v1614530089419!5m2!1sen!2sus"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3021.886447468825!2d-111.89276898465695!3d40.76452217932626!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8752f513d6f6ab15%3A0x4be5eda424cce15a!2sSalt%20Lake%20Chamber!5e0!3m2!1sen!2sus!4v1617730628841!5m2!1sen!2sus"
                     width="600" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
             </div>
             <div class="contact-info">
                 <h3>Contact Information</h3>
-                <p>🎯 46 N Main St. Preston, ID. 83263</p>
-                <p>☎️ 208-555-5555</p>
-                <p>📧 weather@checkweather.com</p>
+                <p>🎯 175 E. 400 S. Salt Lake City, UT. 84111</p>
+                <p>☎️ 801-555-5555</p>
+                <p>📧 info@slcchamber.com</p>
                 <a href="https://www.facebook.com/"><img src="images/facebook.jpg" alt="Facebook logo"></a>
                 <a href="https://twitter.com/"><img src="images/twitter.jpg" alt="Twitter logo"></a>
                 <a href="https://www.instagram.com/"><img src="images/instagram.jpg" alt="Instagram logo"></a>
