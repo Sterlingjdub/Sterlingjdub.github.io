@@ -82,4 +82,3 @@ fetch(townsURL)
       }
     })
   }); 
-
