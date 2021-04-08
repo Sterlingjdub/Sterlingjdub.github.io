@@ -1,7 +1,7 @@
 WebFont.load({
     google: {
       families: [
-         'Roboto', 'Bebas Neue'
+         'Roboto', 'Montserrat'
       ]
     }
   });
