@@ -96,9 +96,9 @@
                 <fieldset>
                     <legend><span>Personal Information</span></legend>
                     <label class="personal-info"><span>First Name: *</span><input name="firstname" type="text" value=""
-                            pattern="[a-zA-Z -._]{5,99}" required></label>
+                            pattern="[a-zA-Z -._]{1,99}" required></label>
                     <label class="personal-info"><span>Last Name: *</span><input name="lastname" type="text" value=""
-                            pattern="[a-zA-Z -._]{5,99}" required></label>
+                            pattern="[a-zA-Z -._]{1,99}" required></label>
                     <label class="personal-info"><span>Job Title: </span><input name="jobtitle" type="text" value=""
                             pattern="[a-zA-Z -._]{5,99}"></label>
                     <label class="personal-info"><span>Email: *</span><input name="email" type="email" value=""
@@ -113,7 +113,7 @@
                     <label class="company-info"><span>Business Website: </span><input name="website" type="url" value=""
                         placeholder="www.website.com" pattern="https://.*" size="30"></label>
                     <label class="company-info"><span>Business Address: </span><input name="address" type="text" value=""></label>
-                    <label><span>Zip Code: *</span><input name="zipcode" type="number" value="" placeholder="xxxxx"></label>
+                    <label><span>Zip Code: </span><input name="zipcode" type="number" value="" placeholder="xxxxx"></label>
                     <label><span>Business Description:</span><textarea name="message" rows="10"
                         cols="27"></textarea></label>
                 </fieldset>
@@ -149,7 +149,7 @@
         </section>
     </main>
     <footer>
-        <p>&copy; Check on Weather | Sterling J. Welker
+        <p>&copy; Salt Lake City Chamber of Commerce | Sterling J. Welker
         </p>
         <div class="Date">
             <span id="currentDate"></span>
